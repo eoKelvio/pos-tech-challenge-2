@@ -1,23 +1,42 @@
-# Dockerfile para aplicação NestJS
-FROM node:18-alpine
+FROM node:18-alpine AS builder
 
-# Define o diretório de trabalho
 WORKDIR /app
 
-# Copia os arquivos de dependências
 COPY package*.json ./
+COPY prisma ./prisma/
 
-# Instala as dependências
-RUN npm ci --only=production
+RUN npm ci
 
-# Copia o código fonte
+RUN npx prisma generate
+
 COPY . .
 
-# Compila a aplicação
 RUN npm run build
 
-# Expõe a porta
+FROM node:18-alpine AS production
+
+WORKDIR /app
+
+RUN npm install -g prisma
+
+COPY package*.json ./
+
+RUN npm ci --only=production && npm cache clean --force
+
+COPY --from=builder /app/node_modules/.prisma ./node_modules/.prisma
+COPY --from=builder /app/generated ./generated
+
+COPY --from=builder /app/dist ./dist
+
+COPY prisma ./prisma
+
+RUN addgroup -g 1001 -S nodejs
+RUN adduser -S nestjs -u 1001
+USER nestjs
+
 EXPOSE 3000
 
-# Comando para iniciar a aplicação
+HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
+  CMD node dist/main.js || exit 1
+
 CMD ["npm", "run", "start:prod"]
