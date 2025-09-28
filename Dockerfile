@@ -19,6 +19,9 @@ WORKDIR /app
 
 RUN npm install -g prisma
 
+# Install wget for health checks
+RUN apk add --no-cache wget
+
 COPY package*.json ./
 
 RUN npm ci --only=production && npm cache clean --force
@@ -36,6 +39,6 @@ USER nestjs
 EXPOSE 3000
 
 HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
-  CMD node dist/main.js || exit 1
+  CMD wget --no-verbose --tries=1 --spider http://localhost:3000/health || exit 1
 
 CMD ["npm", "run", "start:prod"]
