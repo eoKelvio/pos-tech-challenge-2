@@ -40,7 +40,7 @@ jobs:
         with:
           context: .
           file: ./Dockerfile
-          push: ${{ github.event_name != 'pull_request' }}
+          push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
           cache-from: type=gha
@@ -50,7 +50,7 @@ jobs:
   test-docker-compose:
     runs-on: ubuntu-latest
     needs: build-and-push
-    if: github.event_name == 'pull_request'
+    if: github.event_name == 'pull_request' || github.event_name == 'push'
 
     steps:
       - name: Checkout repository
@@ -67,15 +67,15 @@ jobs:
           JWT_SECRET=test-secret-key
           EOF
 
-      - name: Test docker-compose
+      - name: Test docker compose
         run: |
-          docker-compose up -d postgres
+          docker compose up -d postgres
           sleep 10
-          docker-compose up --build prisma-migrate
-          docker-compose up -d app
+          docker compose up --build prisma-migrate
+          docker compose up -d app
           sleep 30
-          docker-compose ps
-          docker-compose logs app
+          docker compose ps
+          docker compose logs app
           
       - name: Cleanup
-        run: docker-compose down -v
+        run: docker compose down -v
