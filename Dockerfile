@@ -24,7 +24,6 @@ COPY package*.json ./
 RUN npm ci --only=production && npm cache clean --force
 
 COPY --from=builder /app/node_modules/.prisma ./node_modules/.prisma
-COPY --from=builder /app/generated ./generated
 
 COPY --from=builder /app/dist ./dist
 
