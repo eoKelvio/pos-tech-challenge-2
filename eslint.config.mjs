@@ -6,7 +6,7 @@ import tseslint from 'typescript-eslint';
 
 export default tseslint.config(
   {
-    ignores: ['eslint.config.mjs', 'dist/', 'node_modules/', '*.js'],
+    ignores: ['eslint.config.mjs', 'dist/', 'node_modules/', 'tests/', '*.js'],
   },
   eslint.configs.recommended,
   ...tseslint.configs.recommendedTypeChecked,
@@ -40,7 +40,7 @@ export default tseslint.config(
       '@typescript-eslint/no-inferrable-types': 'off',
       '@typescript-eslint/prefer-as-const': 'off',
       '@typescript-eslint/no-non-null-assertion': 'off',
-      
+
       'no-console': 'off',
       'prefer-const': 'off',
       'no-unused-vars': 'off',
@@ -50,11 +50,11 @@ export default tseslint.config(
       'no-var': 'off',
       'prefer-rest-params': 'off',
       'prefer-spread': 'off',
-      
+
       'no-duplicate-imports': 'warn',
       'no-unreachable': 'error',
       'no-constant-condition': 'error',
-      
+
       'prettier/prettier': 'warn',
     },
   },
