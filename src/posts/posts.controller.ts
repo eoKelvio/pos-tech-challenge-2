@@ -9,10 +9,12 @@ import {
   Put,
   Query,
   UseGuards,
+  Req,
 } from '@nestjs/common';
 import { PostsService } from './posts.service';
 import { CreatePostDto, UpdatePostDto } from './dto/posts';
 import { AuthGuard } from 'src/auth/auth.guard';
+import { SearchAccessGuard } from './guards/search-access.guard';
 import { PostAccessGuard } from './guards/post-access.guard';
 import {
   ApiTags,
@@ -100,11 +102,16 @@ export class PostsController {
     return this.postsService.getAllPosts();
   }
 
+  @UseGuards(SearchAccessGuard)
   @Get('search')
+  @ApiBearerAuth('JWT-auth')
   @ApiOperation({
-    summary: '🔓 Search active public posts by title',
-    description:
-      'Searches for posts with ACTIVE status and PUBLIC type matching the title.',
+    summary: '🔓🔒 Search posts by title (conditional access)',
+    description: `Search posts by title with conditional authentication requirements.
+
+🔓 Public Access: Always returns posts with PUBLIC type and ACTIVE status that match the title.
+
+🔒 Authenticated Access: If authenticated, returns ALL posts that match the title (PUBLIC/PRIVATE, ACTIVE/INACTIVE, from any author).`,
   })
   @ApiQuery({
     name: 'title',
@@ -114,7 +121,8 @@ export class PostsController {
   })
   @ApiResponse({
     status: 200,
-    description: '✅ Active public posts found',
+    description:
+      '✅ Matching posts returned successfully (public active for anonymous; all matching posts when authenticated)',
     schema: {
       type: 'array',
       items: {
@@ -123,8 +131,16 @@ export class PostsController {
           id: { type: 'number', example: 1 },
           title: { type: 'string', example: 'Technology Post' },
           content: { type: 'string', example: 'Post content...' },
-          type: { type: 'string', enum: ['PUBLIC'], example: 'PUBLIC' },
-          status: { type: 'string', enum: ['ACTIVE'], example: 'ACTIVE' },
+          type: {
+            type: 'string',
+            enum: ['PUBLIC', 'PRIVATE'],
+            example: 'PUBLIC',
+          },
+          status: {
+            type: 'string',
+            enum: ['ACTIVE', 'INACTIVE'],
+            example: 'ACTIVE',
+          },
           authorId: { type: 'number', example: 1 },
           createdAt: { type: 'string', format: 'date-time' },
           updatedAt: { type: 'string', format: 'date-time' },
@@ -132,8 +148,9 @@ export class PostsController {
       },
     },
   })
-  async searchPosts(@Query('title') title: string) {
-    return this.postsService.searchPosts(title);
+  async searchPosts(@Query('title') title: string, @Req() req?: any) {
+    const userId = req?.user?.id as number | undefined;
+    return this.postsService.searchPosts(title, userId);
   }
 
   @UseGuards(PostAccessGuard)

@@ -16,12 +16,11 @@ export class PostsService {
   constructor(private readonly prismaService: PrismaService) {}
 
   async getActivePosts() {
-    return this.prismaService.post.findMany({
-      where: {
-        status: PostStatus.ACTIVE,
-        type: PostType.PUBLIC,
-      } as any,
-    });
+    const where: any = {
+      status: PostStatus.ACTIVE,
+      type: PostType.PUBLIC,
+    };
+    return this.prismaService.post.findMany({ where });
   }
 
   async getAllPosts() {
@@ -87,7 +86,10 @@ export class PostsService {
     }
 
     // Verifica se o post está inativo antes de permitir a exclusão
-    if ((existingPost as any).status !== PostStatus.INACTIVE) {
+    if (
+      (existingPost as unknown as { status?: PostStatus }).status !==
+      PostStatus.INACTIVE
+    ) {
       throw new BadRequestException(
         'Only inactive posts can be deleted. Please deactivate the post first.',
       );
@@ -98,16 +100,27 @@ export class PostsService {
     return { message: 'Post deleted successfully' };
   }
 
-  async searchPosts(title: string) {
-    return this.prismaService.post.findMany({
-      where: {
-        title: {
-          contains: title,
-          mode: 'insensitive',
-        },
-        status: PostStatus.ACTIVE,
-        type: PostType.PUBLIC,
-      } as any,
-    });
+  async searchPosts(title: string, userId?: number) {
+    const titleFilter: any = {
+      title: {
+        contains: title,
+        mode: 'insensitive',
+      },
+    };
+
+    if (userId) {
+      // Authenticated: can see all posts (public/private, active/inactive)
+      return this.prismaService.post.findMany({
+        where: titleFilter,
+      });
+    }
+
+    // Anonymous: only public active
+    const where: any = {
+      ...titleFilter,
+      status: PostStatus.ACTIVE,
+      type: PostType.PUBLIC,
+    };
+    return this.prismaService.post.findMany({ where });
   }
 }
