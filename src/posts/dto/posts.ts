@@ -92,6 +92,17 @@ export class UpdatePostDto {
   content?: string;
 
   @ApiPropertyOptional({
+    description: 'Post type',
+    example: PostType.PUBLIC,
+    enum: PostType,
+  })
+  @IsOptional()
+  @IsIn(Object.values(PostType), {
+    message: `Type must be one of: ${Object.values(PostType).join(', ')}`,
+  })
+  type?: PostType;
+
+  @ApiPropertyOptional({
     description: 'Post status',
     example: PostStatus.ACTIVE,
     enum: PostStatus,
