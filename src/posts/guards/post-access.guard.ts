@@ -41,10 +41,7 @@ export class PostAccessGuard implements CanActivate {
       }
 
       // Se o post é público e ativo, permite acesso livre
-      if (
-        (post as any).type === PostType.PUBLIC &&
-        (post as any).status === PostStatus.ACTIVE
-      ) {
+      if (post.type === PostType.PUBLIC && post.status === PostStatus.ACTIVE) {
         return true;
       }
 

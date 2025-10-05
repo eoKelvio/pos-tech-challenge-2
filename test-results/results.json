@@ -1,0 +1,480 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\kelvi\\Downloads\\pos-tech-challenge-2\\playwright.config.js",
+    "rootDir": "C:/Users/kelvi/Downloads/pos-tech-challenge-2/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": "C:\\Users\\kelvi\\Downloads\\pos-tech-challenge-2\\tests\\global-teardown.js",
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 6
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/results.json"
+        }
+      ],
+      [
+        "list",
+        null
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/kelvi/Downloads/pos-tech-challenge-2/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 6
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/kelvi/Downloads/pos-tech-challenge-2/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.55.1",
+    "workers": 8,
+    "webServer": {
+      "command": "node scripts/start-test-env.js",
+      "url": "http://localhost:3000/health",
+      "timeout": 180000,
+      "reuseExistingServer": true
+    }
+  },
+  "suites": [
+    {
+      "title": "modules\\auth\\auth.spec.js",
+      "file": "modules/auth/auth.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Authentication",
+          "file": "modules/auth/auth.spec.js",
+          "line": 11,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should be able to signup",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 138,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "POST http://localhost:3000/auth/signup - 201\n"
+                        },
+                        {
+                          "text": "Payload:\n"
+                        },
+                        {
+                          "text": "{\n  name: \u001b[32m'Signup Test'\u001b[39m,\n  email: \u001b[32m'signup.test@example.com'\u001b[39m,\n  password: \u001b[32m'password'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "Response Body:\n"
+                        },
+                        {
+                          "text": "{ id: \u001b[33m4\u001b[39m, name: \u001b[32m'Signup Test'\u001b[39m, email: \u001b[32m'signup.test@example.com'\u001b[39m }\n"
+                        },
+                        {
+                          "text": "----------------------------------\n\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-05T19:40:27.633Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "6779a1d6cf525a363d45-b5d41dc12754fa0af252",
+              "file": "modules/auth/auth.spec.js",
+              "line": 12,
+              "column": 7
+            },
+            {
+              "title": "should not be able to signup with existing email",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 180,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "POST http://localhost:3000/auth/signup - 201\n"
+                        },
+                        {
+                          "text": "Payload:\n"
+                        },
+                        {
+                          "text": "{\n  name: \u001b[32m'Signup Test Existing Email'\u001b[39m,\n  email: \u001b[32m'signup.test.existing.email@example.com'\u001b[39m,\n  password: \u001b[32m'password'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "Response Body:\n"
+                        },
+                        {
+                          "text": "{\n  id: \u001b[33m3\u001b[39m,\n  name: \u001b[32m'Signup Test Existing Email'\u001b[39m,\n  email: \u001b[32m'signup.test.existing.email@example.com'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "----------------------------------\n\n"
+                        },
+                        {
+                          "text": "POST http://localhost:3000/auth/signup - 401\n"
+                        },
+                        {
+                          "text": "Payload:\n"
+                        },
+                        {
+                          "text": "{\n  name: \u001b[32m'Signup Test Existing Email'\u001b[39m,\n  email: \u001b[32m'signup.test.existing.email@example.com'\u001b[39m,\n  password: \u001b[32m'password'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "----------------------------------\n\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "Error Details: {\"message\":\"User already exists\",\"error\":\"Unauthorized\",\"statusCode\":401}\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2025-10-05T19:40:27.566Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "6779a1d6cf525a363d45-74ad029bc9106c2cb60c",
+              "file": "modules/auth/auth.spec.js",
+              "line": 31,
+              "column": 7
+            },
+            {
+              "title": "should be able to signin",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 230,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "POST http://localhost:3000/auth/signup - 201\n"
+                        },
+                        {
+                          "text": "Payload:\n"
+                        },
+                        {
+                          "text": "{\n  name: \u001b[32m'Signin Test'\u001b[39m,\n  email: \u001b[32m'signin.test@example.com'\u001b[39m,\n  password: \u001b[32m'password'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "Response Body:\n"
+                        },
+                        {
+                          "text": "{ id: \u001b[33m2\u001b[39m, name: \u001b[32m'Signin Test'\u001b[39m, email: \u001b[32m'signin.test@example.com'\u001b[39m }\n"
+                        },
+                        {
+                          "text": "----------------------------------\n\n"
+                        },
+                        {
+                          "text": "POST http://localhost:3000/auth/signin - 201\n"
+                        },
+                        {
+                          "text": "Payload:\n"
+                        },
+                        {
+                          "text": "{ email: \u001b[32m'signin.test@example.com'\u001b[39m, password: \u001b[32m'password'\u001b[39m }\n"
+                        },
+                        {
+                          "text": "Response Body:\n"
+                        },
+                        {
+                          "text": "{\n  accessToken: \u001b[32m'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwibmFtZSI6IlNpZ25pbiBUZXN0IiwiZW1haWwiOiJzaWduaW4udGVzdEBleGFtcGxlLmNvbSIsImlhdCI6MTc1OTY5MzIyNywiZXhwIjoxNzU5Njk2ODI3fQ.6B8e9EbwRGsXghRF5oUJIGJfHzv3ItNC-GrFKTishNs'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "----------------------------------\n\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-05T19:40:27.576Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "6779a1d6cf525a363d45-28c1645d7dac757a1324",
+              "file": "modules/auth/auth.spec.js",
+              "line": 47,
+              "column": 7
+            },
+            {
+              "title": "should not be able to signin with invalid credentials",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 106,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "POST http://localhost:3000/auth/signin - 401\n"
+                        },
+                        {
+                          "text": "Payload:\n"
+                        },
+                        {
+                          "text": "{ email: \u001b[32m'invalid.email@example.com'\u001b[39m, password: \u001b[32m'password'\u001b[39m }\n"
+                        },
+                        {
+                          "text": "----------------------------------\n\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "Error Details: {\"message\":\"Invalid credentials\",\"error\":\"Unauthorized\",\"statusCode\":401}\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2025-10-05T19:40:27.560Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "6779a1d6cf525a363d45-8a98be8ca5414d28f7b2",
+              "file": "modules/auth/auth.spec.js",
+              "line": 69,
+              "column": 7
+            },
+            {
+              "title": "should be able to get me",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 253,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "POST http://localhost:3000/auth/signup - 201\n"
+                        },
+                        {
+                          "text": "Payload:\n"
+                        },
+                        {
+                          "text": "{\n  name: \u001b[32m'Get Me Test'\u001b[39m,\n  email: \u001b[32m'get.me.test@example.com'\u001b[39m,\n  password: \u001b[32m'password'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "Response Body:\n"
+                        },
+                        {
+                          "text": "{ id: \u001b[33m1\u001b[39m, name: \u001b[32m'Get Me Test'\u001b[39m, email: \u001b[32m'get.me.test@example.com'\u001b[39m }\n"
+                        },
+                        {
+                          "text": "----------------------------------\n\n"
+                        },
+                        {
+                          "text": "POST http://localhost:3000/auth/signin - 201\n"
+                        },
+                        {
+                          "text": "Payload:\n"
+                        },
+                        {
+                          "text": "{ email: \u001b[32m'get.me.test@example.com'\u001b[39m, password: \u001b[32m'password'\u001b[39m }\n"
+                        },
+                        {
+                          "text": "Response Body:\n"
+                        },
+                        {
+                          "text": "{\n  accessToken: \u001b[32m'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6IkdldCBNZSBUZXN0IiwiZW1haWwiOiJnZXQubWUudGVzdEBleGFtcGxlLmNvbSIsImlhdCI6MTc1OTY5MzIyNywiZXhwIjoxNzU5Njk2ODI3fQ.lWy58U5Kcxz0Ed80Mbz5jGXEUFbNNLCgSZhioFp1WL4'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "----------------------------------\n\n"
+                        },
+                        {
+                          "text": "GET http://localhost:3000/auth/me - 200\n"
+                        },
+                        {
+                          "text": "Payload:\n"
+                        },
+                        {
+                          "text": "{\n  token: \u001b[32m'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6IkdldCBNZSBUZXN0IiwiZW1haWwiOiJnZXQubWUudGVzdEBleGFtcGxlLmNvbSIsImlhdCI6MTc1OTY5MzIyNywiZXhwIjoxNzU5Njk2ODI3fQ.lWy58U5Kcxz0Ed80Mbz5jGXEUFbNNLCgSZhioFp1WL4'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "Response Body:\n"
+                        },
+                        {
+                          "text": "{\n  id: \u001b[33m1\u001b[39m,\n  name: \u001b[32m'Get Me Test'\u001b[39m,\n  email: \u001b[32m'get.me.test@example.com'\u001b[39m,\n  iat: \u001b[33m1759693227\u001b[39m,\n  exp: \u001b[33m1759696827\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "----------------------------------\n\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-05T19:40:27.556Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "6779a1d6cf525a363d45-220378f003c283911ae9",
+              "file": "modules/auth/auth.spec.js",
+              "line": 83,
+              "column": 7
+            },
+            {
+              "title": "should not be able to get me with invalid token",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 5,
+                      "status": "passed",
+                      "duration": 68,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "GET http://localhost:3000/auth/me - 401\n"
+                        },
+                        {
+                          "text": "Payload:\n"
+                        },
+                        {
+                          "text": "{ token: \u001b[32m'invalid.token'\u001b[39m }\n"
+                        },
+                        {
+                          "text": "----------------------------------\n\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "Error Details: {\"message\":\"Unauthorized\",\"statusCode\":401}\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2025-10-05T19:40:27.542Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "6779a1d6cf525a363d45-5d01bddaff2ce1914aa9",
+              "file": "modules/auth/auth.spec.js",
+              "line": 111,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-10-05T19:40:08.328Z",
+    "duration": 21470.691,
+    "expected": 6,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

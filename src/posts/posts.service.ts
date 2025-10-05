@@ -87,7 +87,7 @@ export class PostsService {
     }
 
     // Verifica se o post está inativo antes de permitir a exclusão
-    if ((existingPost as any).status !== PostStatus.INACTIVE) {
+    if (existingPost.status !== PostStatus.INACTIVE) {
       throw new BadRequestException(
         'Only inactive posts can be deleted. Please deactivate the post first.',
       );

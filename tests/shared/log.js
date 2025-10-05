@@ -4,7 +4,7 @@
  * @param {object} object.payload
  * @param {import('playwright-core').APIResponse} object.response
  */
-export const lazylog = async ({ method = '', payload = '', response } = {}) => {
+async function lazylog({ method = '', payload = '', response } = {}) {
   const url = response.url();
   const status = response.status();
 
@@ -24,4 +24,6 @@ export const lazylog = async ({ method = '', payload = '', response } = {}) => {
     console.error('Error Details:', errorText);
   }
   console.log(`----------------------------------\n`);
-};
+}
+
+module.exports = { lazylog };
