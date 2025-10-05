@@ -1,0 +1,38 @@
+# Análise de Qualidade de Código
+name: Code Quality
+
+on:
+    push:
+        branches:
+            - develop
+            - main
+    pull_request:
+        branches:
+            - develop
+            - main
+
+jobs:
+    quality:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v4
+
+            - name: Setup Node.js
+              uses: actions/setup-node@v4
+              with:
+                  node-version: "18"
+                  cache: "npm"
+
+            - name: Install dependencies
+              run: npm ci
+
+            - name: Run ESLint
+              run: npm run lint
+
+            - name: Check code formatting
+              run: npx prettier --check "src/**/*.ts" "test/**/*.ts"
+
+            - name: Run security audit
+              run: npm audit --audit-level moderate
