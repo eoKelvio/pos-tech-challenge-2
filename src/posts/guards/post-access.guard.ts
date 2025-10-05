@@ -8,7 +8,6 @@ import {
 import { JwtService } from '@nestjs/jwt';
 import { PrismaService } from 'src/prisma/prisma.service';
 import { jwtConstants } from 'src/auth/constants';
-import { PostType, PostStatus } from '../dto/posts';
 import { AuthGuard } from 'src/auth/auth.guard';
 
 @Injectable()
@@ -31,17 +30,23 @@ export class PostAccessGuard implements CanActivate {
     }
 
     try {
-      // Busca o post no banco de dados
-      const post = await this.prismaService.post.findUnique({
+      // Verifica existência do post
+      const exists = await this.prismaService.post.count({
         where: { id: postId },
       });
-
-      if (!post) {
+      if (exists === 0) {
         throw new NotFoundException('Post not found');
       }
 
       // Se o post é público e ativo, permite acesso livre
-      if (post.type === PostType.PUBLIC && post.status === PostStatus.ACTIVE) {
+      const isPublicActive = await this.prismaService.post.count({
+        where: {
+          id: postId,
+          type: 'PUBLIC' as any,
+          status: 'ACTIVE' as any,
+        } as any,
+      });
+      if (isPublicActive > 0) {
         return true;
       }
 

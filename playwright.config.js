@@ -41,8 +41,8 @@ module.exports = defineConfig({
     // URL base da aplicação
     baseURL: process.env.PLAYWRIGHT_BASE_URL || 'http://localhost:3000',
 
-    // Rastreamento de erros
-    trace: 'on-first-retry',
+    // Rastreamento sempre ativo
+    trace: 'on',
 
     // Screenshots em caso de falha
     screenshot: 'only-on-failure',

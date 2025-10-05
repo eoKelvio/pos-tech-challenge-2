@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 6
+      "actualWorkers": 8
     },
     "preserveOutput": "always",
     "reporter": [
@@ -41,7 +41,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 6
+          "actualWorkers": 8
         },
         "id": "chromium",
         "name": "chromium",
@@ -95,7 +95,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 138,
+                      "duration": 193,
                       "errors": [],
                       "stdout": [
                         {
@@ -111,7 +111,7 @@
                           "text": "Response Body:\n"
                         },
                         {
-                          "text": "{ id: \u001b[33m4\u001b[39m, name: \u001b[32m'Signup Test'\u001b[39m, email: \u001b[32m'signup.test@example.com'\u001b[39m }\n"
+                          "text": "{ id: \u001b[33m3\u001b[39m, name: \u001b[32m'Signup Test'\u001b[39m, email: \u001b[32m'signup.test@example.com'\u001b[39m }\n"
                         },
                         {
                           "text": "----------------------------------\n\n"
@@ -119,9 +119,15 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-05T19:40:27.633Z",
+                      "startTime": "2025-10-05T22:46:26.836Z",
                       "annotations": [],
-                      "attachments": []
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\kelvi\\Downloads\\pos-tech-challenge-2\\test-results\\modules-auth-auth-Authentication-should-be-able-to-signup-chromium\\trace.zip"
+                        }
+                      ]
                     }
                   ],
                   "status": "expected"
@@ -148,7 +154,7 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 180,
+                      "duration": 184,
                       "errors": [],
                       "stdout": [
                         {
@@ -164,7 +170,7 @@
                           "text": "Response Body:\n"
                         },
                         {
-                          "text": "{\n  id: \u001b[33m3\u001b[39m,\n  name: \u001b[32m'Signup Test Existing Email'\u001b[39m,\n  email: \u001b[32m'signup.test.existing.email@example.com'\u001b[39m\n}\n"
+                          "text": "{\n  id: \u001b[33m1\u001b[39m,\n  name: \u001b[32m'Signup Test Existing Email'\u001b[39m,\n  email: \u001b[32m'signup.test.existing.email@example.com'\u001b[39m\n}\n"
                         },
                         {
                           "text": "----------------------------------\n\n"
@@ -188,9 +194,15 @@
                         }
                       ],
                       "retry": 0,
-                      "startTime": "2025-10-05T19:40:27.566Z",
+                      "startTime": "2025-10-05T22:46:26.845Z",
                       "annotations": [],
-                      "attachments": []
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\kelvi\\Downloads\\pos-tech-challenge-2\\test-results\\modules-auth-auth-Authenti-30717--signup-with-existing-email-chromium\\trace.zip"
+                        }
+                      ]
                     }
                   ],
                   "status": "expected"
@@ -217,7 +229,7 @@
                       "workerIndex": 2,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 230,
+                      "duration": 231,
                       "errors": [],
                       "stdout": [
                         {
@@ -251,7 +263,7 @@
                           "text": "Response Body:\n"
                         },
                         {
-                          "text": "{\n  accessToken: \u001b[32m'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwibmFtZSI6IlNpZ25pbiBUZXN0IiwiZW1haWwiOiJzaWduaW4udGVzdEBleGFtcGxlLmNvbSIsImlhdCI6MTc1OTY5MzIyNywiZXhwIjoxNzU5Njk2ODI3fQ.6B8e9EbwRGsXghRF5oUJIGJfHzv3ItNC-GrFKTishNs'\u001b[39m\n}\n"
+                          "text": "{\n  accessToken: \u001b[32m'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwibmFtZSI6IlNpZ25pbiBUZXN0IiwiZW1haWwiOiJzaWduaW4udGVzdEBleGFtcGxlLmNvbSIsImlhdCI6MTc1OTcwNDM4NywiZXhwIjoxNzU5NzA3OTg3fQ.iHnDhdsCuat_XeIt5GUr896aIMhpigHzk252fFU0YoU'\u001b[39m\n}\n"
                         },
                         {
                           "text": "----------------------------------\n\n"
@@ -259,9 +271,15 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-05T19:40:27.576Z",
+                      "startTime": "2025-10-05T22:46:26.862Z",
                       "annotations": [],
-                      "attachments": []
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\kelvi\\Downloads\\pos-tech-challenge-2\\test-results\\modules-auth-auth-Authentication-should-be-able-to-signin-chromium\\trace.zip"
+                        }
+                      ]
                     }
                   ],
                   "status": "expected"
@@ -288,7 +306,7 @@
                       "workerIndex": 3,
                       "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 106,
+                      "duration": 132,
                       "errors": [],
                       "stdout": [
                         {
@@ -310,9 +328,15 @@
                         }
                       ],
                       "retry": 0,
-                      "startTime": "2025-10-05T19:40:27.560Z",
+                      "startTime": "2025-10-05T22:46:26.817Z",
                       "annotations": [],
-                      "attachments": []
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\kelvi\\Downloads\\pos-tech-challenge-2\\test-results\\modules-auth-auth-Authenti-b4f34-in-with-invalid-credentials-chromium\\trace.zip"
+                        }
+                      ]
                     }
                   ],
                   "status": "expected"
@@ -339,7 +363,7 @@
                       "workerIndex": 4,
                       "parallelIndex": 4,
                       "status": "passed",
-                      "duration": 253,
+                      "duration": 298,
                       "errors": [],
                       "stdout": [
                         {
@@ -355,7 +379,7 @@
                           "text": "Response Body:\n"
                         },
                         {
-                          "text": "{ id: \u001b[33m1\u001b[39m, name: \u001b[32m'Get Me Test'\u001b[39m, email: \u001b[32m'get.me.test@example.com'\u001b[39m }\n"
+                          "text": "{ id: \u001b[33m4\u001b[39m, name: \u001b[32m'Get Me Test'\u001b[39m, email: \u001b[32m'get.me.test@example.com'\u001b[39m }\n"
                         },
                         {
                           "text": "----------------------------------\n\n"
@@ -373,7 +397,7 @@
                           "text": "Response Body:\n"
                         },
                         {
-                          "text": "{\n  accessToken: \u001b[32m'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6IkdldCBNZSBUZXN0IiwiZW1haWwiOiJnZXQubWUudGVzdEBleGFtcGxlLmNvbSIsImlhdCI6MTc1OTY5MzIyNywiZXhwIjoxNzU5Njk2ODI3fQ.lWy58U5Kcxz0Ed80Mbz5jGXEUFbNNLCgSZhioFp1WL4'\u001b[39m\n}\n"
+                          "text": "{\n  accessToken: \u001b[32m'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwibmFtZSI6IkdldCBNZSBUZXN0IiwiZW1haWwiOiJnZXQubWUudGVzdEBleGFtcGxlLmNvbSIsImlhdCI6MTc1OTcwNDM4NywiZXhwIjoxNzU5NzA3OTg3fQ.cS-TLyN_c_w-ZFifwyXpTxzV8aQ_wEDdJn4FOvH61yY'\u001b[39m\n}\n"
                         },
                         {
                           "text": "----------------------------------\n\n"
@@ -385,13 +409,13 @@
                           "text": "Payload:\n"
                         },
                         {
-                          "text": "{\n  token: \u001b[32m'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6IkdldCBNZSBUZXN0IiwiZW1haWwiOiJnZXQubWUudGVzdEBleGFtcGxlLmNvbSIsImlhdCI6MTc1OTY5MzIyNywiZXhwIjoxNzU5Njk2ODI3fQ.lWy58U5Kcxz0Ed80Mbz5jGXEUFbNNLCgSZhioFp1WL4'\u001b[39m\n}\n"
+                          "text": "{\n  token: \u001b[32m'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwibmFtZSI6IkdldCBNZSBUZXN0IiwiZW1haWwiOiJnZXQubWUudGVzdEBleGFtcGxlLmNvbSIsImlhdCI6MTc1OTcwNDM4NywiZXhwIjoxNzU5NzA3OTg3fQ.cS-TLyN_c_w-ZFifwyXpTxzV8aQ_wEDdJn4FOvH61yY'\u001b[39m\n}\n"
                         },
                         {
                           "text": "Response Body:\n"
                         },
                         {
-                          "text": "{\n  id: \u001b[33m1\u001b[39m,\n  name: \u001b[32m'Get Me Test'\u001b[39m,\n  email: \u001b[32m'get.me.test@example.com'\u001b[39m,\n  iat: \u001b[33m1759693227\u001b[39m,\n  exp: \u001b[33m1759696827\u001b[39m\n}\n"
+                          "text": "{\n  id: \u001b[33m4\u001b[39m,\n  name: \u001b[32m'Get Me Test'\u001b[39m,\n  email: \u001b[32m'get.me.test@example.com'\u001b[39m,\n  iat: \u001b[33m1759704387\u001b[39m,\n  exp: \u001b[33m1759707987\u001b[39m\n}\n"
                         },
                         {
                           "text": "----------------------------------\n\n"
@@ -399,9 +423,15 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-05T19:40:27.556Z",
+                      "startTime": "2025-10-05T22:46:26.831Z",
                       "annotations": [],
-                      "attachments": []
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\kelvi\\Downloads\\pos-tech-challenge-2\\test-results\\modules-auth-auth-Authentication-should-be-able-to-get-me-chromium\\trace.zip"
+                        }
+                      ]
                     }
                   ],
                   "status": "expected"
@@ -428,7 +458,7 @@
                       "workerIndex": 5,
                       "parallelIndex": 5,
                       "status": "passed",
-                      "duration": 68,
+                      "duration": 96,
                       "errors": [],
                       "stdout": [
                         {
@@ -450,9 +480,15 @@
                         }
                       ],
                       "retry": 0,
-                      "startTime": "2025-10-05T19:40:27.542Z",
+                      "startTime": "2025-10-05T22:46:26.854Z",
                       "annotations": [],
-                      "attachments": []
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\kelvi\\Downloads\\pos-tech-challenge-2\\test-results\\modules-auth-auth-Authenti-82fe9-o-get-me-with-invalid-token-chromium\\trace.zip"
+                        }
+                      ]
                     }
                   ],
                   "status": "expected"
@@ -466,13 +502,1635 @@
           ]
         }
       ]
+    },
+    {
+      "title": "modules\\posts\\post.spec.js",
+      "file": "modules/posts/post.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Create Post",
+          "file": "modules/posts/post.spec.js",
+          "line": 29,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should be able to create post",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 6,
+                      "status": "passed",
+                      "duration": 316,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "POST http://localhost:3000/auth/signup - 500\n"
+                        },
+                        {
+                          "text": "Payload:\n"
+                        },
+                        {
+                          "text": "{\n  name: \u001b[32m'Post Test'\u001b[39m,\n  email: \u001b[32m'post.test@example.com'\u001b[39m,\n  password: \u001b[32m'password'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "----------------------------------\n\n"
+                        },
+                        {
+                          "text": "POST http://localhost:3000/auth/signin - 201\n"
+                        },
+                        {
+                          "text": "Payload:\n"
+                        },
+                        {
+                          "text": "{ email: \u001b[32m'post.test@example.com'\u001b[39m, password: \u001b[32m'password'\u001b[39m }\n"
+                        },
+                        {
+                          "text": "Response Body:\n"
+                        },
+                        {
+                          "text": "{\n  accessToken: \u001b[32m'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwibmFtZSI6IlBvc3QgVGVzdCIsImVtYWlsIjoicG9zdC50ZXN0QGV4YW1wbGUuY29tIiwiaWF0IjoxNzU5NzA0Mzg3LCJleHAiOjE3NTk3MDc5ODd9.J6DVsHJ73pf9uwrIpTWnZUgBEuv3_hxisLQJavN8QhI'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "----------------------------------\n\n"
+                        },
+                        {
+                          "text": "POST http://localhost:3000/posts - 201\n"
+                        },
+                        {
+                          "text": "Payload:\n"
+                        },
+                        {
+                          "text": "{\n  payload: {\n    title: \u001b[32m'Post Test'\u001b[39m,\n    content: \u001b[32m'Post Content'\u001b[39m,\n    authorId: \u001b[33m1\u001b[39m,\n    type: \u001b[32m'PUBLIC'\u001b[39m,\n    status: \u001b[32m'ACTIVE'\u001b[39m\n  },\n  token: \u001b[32m'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwibmFtZSI6IlBvc3QgVGVzdCIsImVtYWlsIjoicG9zdC50ZXN0QGV4YW1wbGUuY29tIiwiaWF0IjoxNzU5NzA0Mzg3LCJleHAiOjE3NTk3MDc5ODd9.J6DVsHJ73pf9uwrIpTWnZUgBEuv3_hxisLQJavN8QhI'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "Response Body:\n"
+                        },
+                        {
+                          "text": "{\n  id: \u001b[33m1\u001b[39m,\n  title: \u001b[32m'Post Test'\u001b[39m,\n  content: \u001b[32m'Post Content'\u001b[39m,\n  authorId: \u001b[33m1\u001b[39m,\n  type: \u001b[32m'PUBLIC'\u001b[39m,\n  status: \u001b[32m'ACTIVE'\u001b[39m,\n  createdAt: \u001b[32m'2025-10-05T22:46:27.154Z'\u001b[39m,\n  updatedAt: \u001b[32m'2025-10-05T22:46:27.154Z'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "----------------------------------\n\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "Error Details: {\"statusCode\":500,\"message\":\"Internal server error\"}\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2025-10-05T22:46:26.871Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\kelvi\\Downloads\\pos-tech-challenge-2\\test-results\\modules-posts-post-Create-Post-should-be-able-to-create-post-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7074e29538d730118576-a0de5e43f2e9fecaf934",
+              "file": "modules/posts/post.spec.js",
+              "line": 30,
+              "column": 7
+            },
+            {
+              "title": "should not be able to create post with invalid token",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 7,
+                      "status": "passed",
+                      "duration": 278,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "POST http://localhost:3000/auth/signup - 201\n"
+                        },
+                        {
+                          "text": "Payload:\n"
+                        },
+                        {
+                          "text": "{\n  name: \u001b[32m'Post Test'\u001b[39m,\n  email: \u001b[32m'post.test@example.com'\u001b[39m,\n  password: \u001b[32m'password'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "Response Body:\n"
+                        },
+                        {
+                          "text": "{ id: \u001b[33m5\u001b[39m, name: \u001b[32m'Post Test'\u001b[39m, email: \u001b[32m'post.test@example.com'\u001b[39m }\n"
+                        },
+                        {
+                          "text": "----------------------------------\n\n"
+                        },
+                        {
+                          "text": "POST http://localhost:3000/auth/signin - 201\n"
+                        },
+                        {
+                          "text": "Payload:\n"
+                        },
+                        {
+                          "text": "{ email: \u001b[32m'post.test@example.com'\u001b[39m, password: \u001b[32m'password'\u001b[39m }\n"
+                        },
+                        {
+                          "text": "Response Body:\n"
+                        },
+                        {
+                          "text": "{\n  accessToken: \u001b[32m'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwibmFtZSI6IlBvc3QgVGVzdCIsImVtYWlsIjoicG9zdC50ZXN0QGV4YW1wbGUuY29tIiwiaWF0IjoxNzU5NzA0Mzg3LCJleHAiOjE3NTk3MDc5ODd9.J6DVsHJ73pf9uwrIpTWnZUgBEuv3_hxisLQJavN8QhI'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "----------------------------------\n\n"
+                        },
+                        {
+                          "text": "POST http://localhost:3000/posts - 401\n"
+                        },
+                        {
+                          "text": "Payload:\n"
+                        },
+                        {
+                          "text": "{\n  payload: {\n    title: \u001b[32m'Post Test'\u001b[39m,\n    content: \u001b[32m'Post Content'\u001b[39m,\n    authorId: \u001b[33m1\u001b[39m,\n    type: \u001b[32m'PUBLIC'\u001b[39m,\n    status: \u001b[32m'ACTIVE'\u001b[39m\n  },\n  token: \u001b[32m'invalid.token'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "----------------------------------\n\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "Error Details: {\"message\":\"Unauthorized\",\"statusCode\":401}\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2025-10-05T22:46:26.882Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\kelvi\\Downloads\\pos-tech-challenge-2\\test-results\\modules-posts-post-Create--6b22a-ate-post-with-invalid-token-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7074e29538d730118576-39aaae2ce933934c3308",
+              "file": "modules/posts/post.spec.js",
+              "line": 56,
+              "column": 7
+            },
+            {
+              "title": "should not be able to create post without title",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 133,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "POST http://localhost:3000/auth/signup - 401\n"
+                        },
+                        {
+                          "text": "Payload:\n"
+                        },
+                        {
+                          "text": "{\n  name: \u001b[32m'Post Test'\u001b[39m,\n  email: \u001b[32m'post.test@example.com'\u001b[39m,\n  password: \u001b[32m'password'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "----------------------------------\n\n"
+                        },
+                        {
+                          "text": "POST http://localhost:3000/auth/signin - 201\n"
+                        },
+                        {
+                          "text": "Payload:\n"
+                        },
+                        {
+                          "text": "{ email: \u001b[32m'post.test@example.com'\u001b[39m, password: \u001b[32m'password'\u001b[39m }\n"
+                        },
+                        {
+                          "text": "Response Body:\n"
+                        },
+                        {
+                          "text": "{\n  accessToken: \u001b[32m'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwibmFtZSI6IlBvc3QgVGVzdCIsImVtYWlsIjoicG9zdC50ZXN0QGV4YW1wbGUuY29tIiwiaWF0IjoxNzU5NzA0Mzg3LCJleHAiOjE3NTk3MDc5ODd9.J6DVsHJ73pf9uwrIpTWnZUgBEuv3_hxisLQJavN8QhI'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "----------------------------------\n\n"
+                        },
+                        {
+                          "text": "POST http://localhost:3000/posts - 400\n"
+                        },
+                        {
+                          "text": "Payload:\n"
+                        },
+                        {
+                          "text": "{\n  payload: {\n    title: \u001b[32m''\u001b[39m,\n    content: \u001b[32m'Post Content'\u001b[39m,\n    authorId: \u001b[33m1\u001b[39m,\n    type: \u001b[32m'PUBLIC'\u001b[39m,\n    status: \u001b[32m'ACTIVE'\u001b[39m\n  },\n  token: \u001b[32m'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwibmFtZSI6IlBvc3QgVGVzdCIsImVtYWlsIjoicG9zdC50ZXN0QGV4YW1wbGUuY29tIiwiaWF0IjoxNzU5NzA0Mzg3LCJleHAiOjE3NTk3MDc5ODd9.J6DVsHJ73pf9uwrIpTWnZUgBEuv3_hxisLQJavN8QhI'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "----------------------------------\n\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "Error Details: {\"message\":\"User already exists\",\"error\":\"Unauthorized\",\"statusCode\":401}\n"
+                        },
+                        {
+                          "text": "Error Details: {\"message\":[\"title should not be empty\"],\"error\":\"Bad Request\",\"statusCode\":400}\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2025-10-05T22:46:27.016Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\kelvi\\Downloads\\pos-tech-challenge-2\\test-results\\modules-posts-post-Create--bad1c-o-create-post-without-title-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7074e29538d730118576-dcddebb23aa3673cc160",
+              "file": "modules/posts/post.spec.js",
+              "line": 77,
+              "column": 7
+            },
+            {
+              "title": "should not be able to create post without content",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 5,
+                      "status": "passed",
+                      "duration": 125,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "POST http://localhost:3000/auth/signup - 401\n"
+                        },
+                        {
+                          "text": "Payload:\n"
+                        },
+                        {
+                          "text": "{\n  name: \u001b[32m'Post Test'\u001b[39m,\n  email: \u001b[32m'post.test@example.com'\u001b[39m,\n  password: \u001b[32m'password'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "----------------------------------\n\n"
+                        },
+                        {
+                          "text": "POST http://localhost:3000/auth/signin - 201\n"
+                        },
+                        {
+                          "text": "Payload:\n"
+                        },
+                        {
+                          "text": "{ email: \u001b[32m'post.test@example.com'\u001b[39m, password: \u001b[32m'password'\u001b[39m }\n"
+                        },
+                        {
+                          "text": "Response Body:\n"
+                        },
+                        {
+                          "text": "{\n  accessToken: \u001b[32m'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwibmFtZSI6IlBvc3QgVGVzdCIsImVtYWlsIjoicG9zdC50ZXN0QGV4YW1wbGUuY29tIiwiaWF0IjoxNzU5NzA0Mzg3LCJleHAiOjE3NTk3MDc5ODd9.J6DVsHJ73pf9uwrIpTWnZUgBEuv3_hxisLQJavN8QhI'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "----------------------------------\n\n"
+                        },
+                        {
+                          "text": "POST http://localhost:3000/posts - 400\n"
+                        },
+                        {
+                          "text": "Payload:\n"
+                        },
+                        {
+                          "text": "{\n  payload: {\n    title: \u001b[32m'Post Test'\u001b[39m,\n    content: \u001b[32m''\u001b[39m,\n    authorId: \u001b[33m1\u001b[39m,\n    type: \u001b[32m'PUBLIC'\u001b[39m,\n    status: \u001b[32m'ACTIVE'\u001b[39m\n  },\n  token: \u001b[32m'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwibmFtZSI6IlBvc3QgVGVzdCIsImVtYWlsIjoicG9zdC50ZXN0QGV4YW1wbGUuY29tIiwiaWF0IjoxNzU5NzA0Mzg3LCJleHAiOjE3NTk3MDc5ODd9.J6DVsHJ73pf9uwrIpTWnZUgBEuv3_hxisLQJavN8QhI'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "----------------------------------\n\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "Error Details: {\"message\":\"User already exists\",\"error\":\"Unauthorized\",\"statusCode\":401}\n"
+                        },
+                        {
+                          "text": "Error Details: {\"message\":[\"content should not be empty\"],\"error\":\"Bad Request\",\"statusCode\":400}\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2025-10-05T22:46:27.045Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\kelvi\\Downloads\\pos-tech-challenge-2\\test-results\\modules-posts-post-Create--4193e-create-post-without-content-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7074e29538d730118576-b8cde281ffa5cc5ed03b",
+              "file": "modules/posts/post.spec.js",
+              "line": 103,
+              "column": 7
+            },
+            {
+              "title": "should not be able to create post without authorId",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 141,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "POST http://localhost:3000/auth/signup - 401\n"
+                        },
+                        {
+                          "text": "Payload:\n"
+                        },
+                        {
+                          "text": "{\n  name: \u001b[32m'Post Test'\u001b[39m,\n  email: \u001b[32m'post.test@example.com'\u001b[39m,\n  password: \u001b[32m'password'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "----------------------------------\n\n"
+                        },
+                        {
+                          "text": "POST http://localhost:3000/auth/signin - 201\n"
+                        },
+                        {
+                          "text": "Payload:\n"
+                        },
+                        {
+                          "text": "{ email: \u001b[32m'post.test@example.com'\u001b[39m, password: \u001b[32m'password'\u001b[39m }\n"
+                        },
+                        {
+                          "text": "Response Body:\n"
+                        },
+                        {
+                          "text": "{\n  accessToken: \u001b[32m'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwibmFtZSI6IlBvc3QgVGVzdCIsImVtYWlsIjoicG9zdC50ZXN0QGV4YW1wbGUuY29tIiwiaWF0IjoxNzU5NzA0Mzg3LCJleHAiOjE3NTk3MDc5ODd9.J6DVsHJ73pf9uwrIpTWnZUgBEuv3_hxisLQJavN8QhI'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "----------------------------------\n\n"
+                        },
+                        {
+                          "text": "POST http://localhost:3000/posts - 400\n"
+                        },
+                        {
+                          "text": "Payload:\n"
+                        },
+                        {
+                          "text": "{\n  payload: {\n    title: \u001b[32m'Post Test'\u001b[39m,\n    content: \u001b[32m'Post Content'\u001b[39m,\n    authorId: \u001b[1mnull\u001b[22m,\n    type: \u001b[32m'PUBLIC'\u001b[39m,\n    status: \u001b[32m'ACTIVE'\u001b[39m\n  },\n  token: \u001b[32m'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwibmFtZSI6IlBvc3QgVGVzdCIsImVtYWlsIjoicG9zdC50ZXN0QGV4YW1wbGUuY29tIiwiaWF0IjoxNzU5NzA0Mzg3LCJleHAiOjE3NTk3MDc5ODd9.J6DVsHJ73pf9uwrIpTWnZUgBEuv3_hxisLQJavN8QhI'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "----------------------------------\n\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "Error Details: {\"message\":\"User already exists\",\"error\":\"Unauthorized\",\"statusCode\":401}\n"
+                        },
+                        {
+                          "text": "Error Details: {\"message\":[\"authorId should not be empty\",\"authorId must be an integer number\"],\"error\":\"Bad Request\",\"statusCode\":400}\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2025-10-05T22:46:27.092Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\kelvi\\Downloads\\pos-tech-challenge-2\\test-results\\modules-posts-post-Create--2a05d-reate-post-without-authorId-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7074e29538d730118576-ffa7ec5d756d075c325f",
+              "file": "modules/posts/post.spec.js",
+              "line": 129,
+              "column": 7
+            },
+            {
+              "title": "should not be able to create post with invalid type",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 125,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "POST http://localhost:3000/auth/signup - 401\n"
+                        },
+                        {
+                          "text": "Payload:\n"
+                        },
+                        {
+                          "text": "{\n  name: \u001b[32m'Post Test'\u001b[39m,\n  email: \u001b[32m'post.test@example.com'\u001b[39m,\n  password: \u001b[32m'password'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "----------------------------------\n\n"
+                        },
+                        {
+                          "text": "POST http://localhost:3000/auth/signin - 201\n"
+                        },
+                        {
+                          "text": "Payload:\n"
+                        },
+                        {
+                          "text": "{ email: \u001b[32m'post.test@example.com'\u001b[39m, password: \u001b[32m'password'\u001b[39m }\n"
+                        },
+                        {
+                          "text": "Response Body:\n"
+                        },
+                        {
+                          "text": "{\n  accessToken: \u001b[32m'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwibmFtZSI6IlBvc3QgVGVzdCIsImVtYWlsIjoicG9zdC50ZXN0QGV4YW1wbGUuY29tIiwiaWF0IjoxNzU5NzA0Mzg3LCJleHAiOjE3NTk3MDc5ODd9.J6DVsHJ73pf9uwrIpTWnZUgBEuv3_hxisLQJavN8QhI'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "----------------------------------\n\n"
+                        },
+                        {
+                          "text": "POST http://localhost:3000/posts - 400\n"
+                        },
+                        {
+                          "text": "Payload:\n"
+                        },
+                        {
+                          "text": "{\n  payload: {\n    title: \u001b[32m'Post Test'\u001b[39m,\n    content: \u001b[32m'Post Content'\u001b[39m,\n    authorId: \u001b[33m1\u001b[39m,\n    type: \u001b[32m'INVALID_TYPE'\u001b[39m,\n    status: \u001b[32m'ACTIVE'\u001b[39m\n  },\n  token: \u001b[32m'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwibmFtZSI6IlBvc3QgVGVzdCIsImVtYWlsIjoicG9zdC50ZXN0QGV4YW1wbGUuY29tIiwiaWF0IjoxNzU5NzA0Mzg3LCJleHAiOjE3NTk3MDc5ODd9.J6DVsHJ73pf9uwrIpTWnZUgBEuv3_hxisLQJavN8QhI'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "----------------------------------\n\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "Error Details: {\"message\":\"User already exists\",\"error\":\"Unauthorized\",\"statusCode\":401}\n"
+                        },
+                        {
+                          "text": "Error Details: {\"message\":[\"Type must be one of: PUBLIC, PRIVATE\"],\"error\":\"Bad Request\",\"statusCode\":400}\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2025-10-05T22:46:27.095Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\kelvi\\Downloads\\pos-tech-challenge-2\\test-results\\modules-posts-post-Create--528b1-eate-post-with-invalid-type-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7074e29538d730118576-8650fbe7f5005aaae893",
+              "file": "modules/posts/post.spec.js",
+              "line": 156,
+              "column": 7
+            },
+            {
+              "title": "should not be able to create post with invalid status",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 133,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "POST http://localhost:3000/auth/signup - 401\n"
+                        },
+                        {
+                          "text": "Payload:\n"
+                        },
+                        {
+                          "text": "{\n  name: \u001b[32m'Post Test'\u001b[39m,\n  email: \u001b[32m'post.test@example.com'\u001b[39m,\n  password: \u001b[32m'password'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "----------------------------------\n\n"
+                        },
+                        {
+                          "text": "POST http://localhost:3000/auth/signin - 201\n"
+                        },
+                        {
+                          "text": "Payload:\n"
+                        },
+                        {
+                          "text": "{ email: \u001b[32m'post.test@example.com'\u001b[39m, password: \u001b[32m'password'\u001b[39m }\n"
+                        },
+                        {
+                          "text": "Response Body:\n"
+                        },
+                        {
+                          "text": "{\n  accessToken: \u001b[32m'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwibmFtZSI6IlBvc3QgVGVzdCIsImVtYWlsIjoicG9zdC50ZXN0QGV4YW1wbGUuY29tIiwiaWF0IjoxNzU5NzA0Mzg3LCJleHAiOjE3NTk3MDc5ODd9.J6DVsHJ73pf9uwrIpTWnZUgBEuv3_hxisLQJavN8QhI'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "----------------------------------\n\n"
+                        },
+                        {
+                          "text": "POST http://localhost:3000/posts - 400\n"
+                        },
+                        {
+                          "text": "Payload:\n"
+                        },
+                        {
+                          "text": "{\n  payload: {\n    title: \u001b[32m'Post Test'\u001b[39m,\n    content: \u001b[32m'Post Content'\u001b[39m,\n    authorId: \u001b[33m1\u001b[39m,\n    type: \u001b[32m'PUBLIC'\u001b[39m,\n    status: \u001b[32m'INVALID_STATUS'\u001b[39m\n  },\n  token: \u001b[32m'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwibmFtZSI6IlBvc3QgVGVzdCIsImVtYWlsIjoicG9zdC50ZXN0QGV4YW1wbGUuY29tIiwiaWF0IjoxNzU5NzA0Mzg3LCJleHAiOjE3NTk3MDc5ODd9.J6DVsHJ73pf9uwrIpTWnZUgBEuv3_hxisLQJavN8QhI'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "----------------------------------\n\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "Error Details: {\"message\":\"User already exists\",\"error\":\"Unauthorized\",\"statusCode\":401}\n"
+                        },
+                        {
+                          "text": "Error Details: {\"message\":[\"Status must be one of: ACTIVE, INACTIVE\"],\"error\":\"Bad Request\",\"statusCode\":400}\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2025-10-05T22:46:27.172Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\kelvi\\Downloads\\pos-tech-challenge-2\\test-results\\modules-posts-post-Create--8c355-te-post-with-invalid-status-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7074e29538d730118576-b44497f9a0ee9b5ef13b",
+              "file": "modules/posts/post.spec.js",
+              "line": 182,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "List and read posts",
+          "file": "modules/posts/post.spec.js",
+          "line": 209,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should list only public active posts",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 187,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "POST http://localhost:3000/auth/signup - 401\n"
+                        },
+                        {
+                          "text": "Payload:\n"
+                        },
+                        {
+                          "text": "{\n  name: \u001b[32m'Post Test'\u001b[39m,\n  email: \u001b[32m'post.test@example.com'\u001b[39m,\n  password: \u001b[32m'password'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "----------------------------------\n\n"
+                        },
+                        {
+                          "text": "POST http://localhost:3000/auth/signin - 201\n"
+                        },
+                        {
+                          "text": "Payload:\n"
+                        },
+                        {
+                          "text": "{ email: \u001b[32m'post.test@example.com'\u001b[39m, password: \u001b[32m'password'\u001b[39m }\n"
+                        },
+                        {
+                          "text": "Response Body:\n"
+                        },
+                        {
+                          "text": "{\n  accessToken: \u001b[32m'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwibmFtZSI6IlBvc3QgVGVzdCIsImVtYWlsIjoicG9zdC50ZXN0QGV4YW1wbGUuY29tIiwiaWF0IjoxNzU5NzA0Mzg3LCJleHAiOjE3NTk3MDc5ODd9.J6DVsHJ73pf9uwrIpTWnZUgBEuv3_hxisLQJavN8QhI'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "----------------------------------\n\n"
+                        },
+                        {
+                          "text": "POST http://localhost:3000/posts - 201\n"
+                        },
+                        {
+                          "text": "Payload:\n"
+                        },
+                        {
+                          "text": "{\n  payload: {\n    title: \u001b[32m'Public Active 1'\u001b[39m,\n    content: \u001b[32m'Public Active Content'\u001b[39m,\n    authorId: \u001b[33m1\u001b[39m,\n    type: \u001b[32m'PUBLIC'\u001b[39m,\n    status: \u001b[32m'ACTIVE'\u001b[39m\n  },\n  token: \u001b[32m'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwibmFtZSI6IlBvc3QgVGVzdCIsImVtYWlsIjoicG9zdC50ZXN0QGV4YW1wbGUuY29tIiwiaWF0IjoxNzU5NzA0Mzg3LCJleHAiOjE3NTk3MDc5ODd9.J6DVsHJ73pf9uwrIpTWnZUgBEuv3_hxisLQJavN8QhI'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "Response Body:\n"
+                        },
+                        {
+                          "text": "{\n  id: \u001b[33m2\u001b[39m,\n  title: \u001b[32m'Public Active 1'\u001b[39m,\n  content: \u001b[32m'Public Active Content'\u001b[39m,\n  authorId: \u001b[33m1\u001b[39m,\n  type: \u001b[32m'PUBLIC'\u001b[39m,\n  status: \u001b[32m'ACTIVE'\u001b[39m,\n  createdAt: \u001b[32m'2025-10-05T22:46:27.301Z'\u001b[39m,\n  updatedAt: \u001b[32m'2025-10-05T22:46:27.301Z'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "----------------------------------\n\n"
+                        },
+                        {
+                          "text": "POST http://localhost:3000/posts - 201\n"
+                        },
+                        {
+                          "text": "Payload:\n"
+                        },
+                        {
+                          "text": "{\n  payload: {\n    title: \u001b[32m'Public Inactive'\u001b[39m,\n    content: \u001b[32m'Public Inactive Content'\u001b[39m,\n    authorId: \u001b[33m1\u001b[39m,\n    type: \u001b[32m'PUBLIC'\u001b[39m,\n    status: \u001b[32m'INACTIVE'\u001b[39m\n  },\n  token: \u001b[32m'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwibmFtZSI6IlBvc3QgVGVzdCIsImVtYWlsIjoicG9zdC50ZXN0QGV4YW1wbGUuY29tIiwiaWF0IjoxNzU5NzA0Mzg3LCJleHAiOjE3NTk3MDc5ODd9.J6DVsHJ73pf9uwrIpTWnZUgBEuv3_hxisLQJavN8QhI'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "POST http://localhost:3000/posts - 201\n"
+                        },
+                        {
+                          "text": "Payload:\n"
+                        },
+                        {
+                          "text": "{\n  payload: {\n    title: \u001b[32m'Private Active'\u001b[39m,\n    content: \u001b[32m'Private Active Content'\u001b[39m,\n    authorId: \u001b[33m1\u001b[39m,\n    type: \u001b[32m'PRIVATE'\u001b[39m,\n    status: \u001b[32m'ACTIVE'\u001b[39m\n  },\n  token: \u001b[32m'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwibmFtZSI6IlBvc3QgVGVzdCIsImVtYWlsIjoicG9zdC50ZXN0QGV4YW1wbGUuY29tIiwiaWF0IjoxNzU5NzA0Mzg3LCJleHAiOjE3NTk3MDc5ODd9.J6DVsHJ73pf9uwrIpTWnZUgBEuv3_hxisLQJavN8QhI'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "Response Body:\n"
+                        },
+                        {
+                          "text": "{\n  id: \u001b[33m3\u001b[39m,\n  title: \u001b[32m'Public Inactive'\u001b[39m,\n  content: \u001b[32m'Public Inactive Content'\u001b[39m,\n  authorId: \u001b[33m1\u001b[39m,\n  type: \u001b[32m'PUBLIC'\u001b[39m,\n  status: \u001b[32m'INACTIVE'\u001b[39m,\n  createdAt: \u001b[32m'2025-10-05T22:46:27.326Z'\u001b[39m,\n  updatedAt: \u001b[32m'2025-10-05T22:46:27.326Z'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "----------------------------------\n\n"
+                        },
+                        {
+                          "text": "Response Body:\n"
+                        },
+                        {
+                          "text": "{\n  id: \u001b[33m4\u001b[39m,\n  title: \u001b[32m'Private Active'\u001b[39m,\n  content: \u001b[32m'Private Active Content'\u001b[39m,\n  authorId: \u001b[33m1\u001b[39m,\n  type: \u001b[32m'PRIVATE'\u001b[39m,\n  status: \u001b[32m'ACTIVE'\u001b[39m,\n  createdAt: \u001b[32m'2025-10-05T22:46:27.326Z'\u001b[39m,\n  updatedAt: \u001b[32m'2025-10-05T22:46:27.326Z'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "----------------------------------\n\n"
+                        },
+                        {
+                          "text": "GET http://localhost:3000/posts - 200\n"
+                        },
+                        {
+                          "text": "Response Body:\n"
+                        },
+                        {
+                          "text": "[\n  {\n    id: \u001b[33m1\u001b[39m,\n    title: \u001b[32m'Post Test'\u001b[39m,\n    content: \u001b[32m'Post Content'\u001b[39m,\n    authorId: \u001b[33m1\u001b[39m,\n    type: \u001b[32m'PUBLIC'\u001b[39m,\n    status: \u001b[32m'ACTIVE'\u001b[39m,\n    createdAt: \u001b[32m'2025-10-05T22:46:27.154Z'\u001b[39m,\n    updatedAt: \u001b[32m'2025-10-05T22:46:27.154Z'\u001b[39m\n  },\n  {\n    id: \u001b[33m2\u001b[39m,\n    title: \u001b[32m'Public Active 1'\u001b[39m,\n    content: \u001b[32m'Public Active Content'\u001b[39m,\n    authorId: \u001b[33m1\u001b[39m,\n    type: \u001b[32m'PUBLIC'\u001b[39m,\n    status: \u001b[32m'ACTIVE'\u001b[39m,\n    createdAt: \u001b[32m'2025-10-05T22:46:27.301Z'\u001b[39m,\n    updatedAt: \u001b[32m'2025-10-05T22:46:27.301Z'\u001b[39m\n  },\n  {\n    id: \u001b[33m6\u001b[39m,\n    title: \u001b[32m'Public Active Readable'\u001b[39m,\n    content: \u001b[32m'Public Active Readable Content'\u001b[39m,\n    authorId: \u001b[33m1\u001b[39m,\n    type: \u001b[32m'PUBLIC'\u001b[39m,\n    status: \u001b[32m'ACTIVE'\u001b[39m,\n    createdAt: \u001b[32m'2025-10-05T22:46:27.331Z'\u001b[39m,\n    updatedAt: \u001b[32m'2025-10-05T22:46:27.331Z'\u001b[39m\n  }\n]\n"
+                        },
+                        {
+                          "text": "----------------------------------\n\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "Error Details: {\"message\":\"User already exists\",\"error\":\"Unauthorized\",\"statusCode\":401}\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2025-10-05T22:46:27.194Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\kelvi\\Downloads\\pos-tech-challenge-2\\test-results\\modules-posts-post-List-an-a02e4-st-only-public-active-posts-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7074e29538d730118576-412dda60a5b2f98b7c21",
+              "file": "modules/posts/post.spec.js",
+              "line": 210,
+              "column": 7
+            },
+            {
+              "title": "should get public active post by id without token",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 159,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "POST http://localhost:3000/auth/signup - 401\n"
+                        },
+                        {
+                          "text": "Payload:\n"
+                        },
+                        {
+                          "text": "{\n  name: \u001b[32m'Post Test'\u001b[39m,\n  email: \u001b[32m'post.test@example.com'\u001b[39m,\n  password: \u001b[32m'password'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "----------------------------------\n\n"
+                        },
+                        {
+                          "text": "POST http://localhost:3000/auth/signin - 201\n"
+                        },
+                        {
+                          "text": "Payload:\n"
+                        },
+                        {
+                          "text": "{ email: \u001b[32m'post.test@example.com'\u001b[39m, password: \u001b[32m'password'\u001b[39m }\n"
+                        },
+                        {
+                          "text": "Response Body:\n"
+                        },
+                        {
+                          "text": "{\n  accessToken: \u001b[32m'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwibmFtZSI6IlBvc3QgVGVzdCIsImVtYWlsIjoicG9zdC50ZXN0QGV4YW1wbGUuY29tIiwiaWF0IjoxNzU5NzA0Mzg3LCJleHAiOjE3NTk3MDc5ODd9.J6DVsHJ73pf9uwrIpTWnZUgBEuv3_hxisLQJavN8QhI'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "----------------------------------\n\n"
+                        },
+                        {
+                          "text": "POST http://localhost:3000/posts - 201\n"
+                        },
+                        {
+                          "text": "Payload:\n"
+                        },
+                        {
+                          "text": "{\n  payload: {\n    title: \u001b[32m'Public Active Readable'\u001b[39m,\n    content: \u001b[32m'Public Active Readable Content'\u001b[39m,\n    authorId: \u001b[33m1\u001b[39m,\n    type: \u001b[32m'PUBLIC'\u001b[39m,\n    status: \u001b[32m'ACTIVE'\u001b[39m\n  },\n  token: \u001b[32m'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwibmFtZSI6IlBvc3QgVGVzdCIsImVtYWlsIjoicG9zdC50ZXN0QGV4YW1wbGUuY29tIiwiaWF0IjoxNzU5NzA0Mzg3LCJleHAiOjE3NTk3MDc5ODd9.J6DVsHJ73pf9uwrIpTWnZUgBEuv3_hxisLQJavN8QhI'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "Response Body:\n"
+                        },
+                        {
+                          "text": "{\n  id: \u001b[33m6\u001b[39m,\n  title: \u001b[32m'Public Active Readable'\u001b[39m,\n  content: \u001b[32m'Public Active Readable Content'\u001b[39m,\n  authorId: \u001b[33m1\u001b[39m,\n  type: \u001b[32m'PUBLIC'\u001b[39m,\n  status: \u001b[32m'ACTIVE'\u001b[39m,\n  createdAt: \u001b[32m'2025-10-05T22:46:27.331Z'\u001b[39m,\n  updatedAt: \u001b[32m'2025-10-05T22:46:27.331Z'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "----------------------------------\n\n"
+                        },
+                        {
+                          "text": "GET http://localhost:3000/posts/6 - 200\n"
+                        },
+                        {
+                          "text": "Payload:\n"
+                        },
+                        {
+                          "text": "{ id: \u001b[33m6\u001b[39m, token: \u001b[90mundefined\u001b[39m }\n"
+                        },
+                        {
+                          "text": "Response Body:\n"
+                        },
+                        {
+                          "text": "{\n  id: \u001b[33m6\u001b[39m,\n  title: \u001b[32m'Public Active Readable'\u001b[39m,\n  content: \u001b[32m'Public Active Readable Content'\u001b[39m,\n  authorId: \u001b[33m1\u001b[39m,\n  type: \u001b[32m'PUBLIC'\u001b[39m,\n  status: \u001b[32m'ACTIVE'\u001b[39m,\n  createdAt: \u001b[32m'2025-10-05T22:46:27.331Z'\u001b[39m,\n  updatedAt: \u001b[32m'2025-10-05T22:46:27.331Z'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "----------------------------------\n\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "Error Details: {\"message\":\"User already exists\",\"error\":\"Unauthorized\",\"statusCode\":401}\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2025-10-05T22:46:27.219Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\kelvi\\Downloads\\pos-tech-challenge-2\\test-results\\modules-posts-post-List-an-6f8cb-ve-post-by-id-without-token-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7074e29538d730118576-7124abf5b0312e0b5b25",
+              "file": "modules/posts/post.spec.js",
+              "line": 254,
+              "column": 7
+            },
+            {
+              "title": "should require auth for private/inactive post by id",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 5,
+                      "status": "passed",
+                      "duration": 185,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "POST http://localhost:3000/auth/signup - 401\n"
+                        },
+                        {
+                          "text": "Payload:\n"
+                        },
+                        {
+                          "text": "{\n  name: \u001b[32m'Post Test'\u001b[39m,\n  email: \u001b[32m'post.test@example.com'\u001b[39m,\n  password: \u001b[32m'password'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "----------------------------------\n\n"
+                        },
+                        {
+                          "text": "POST http://localhost:3000/auth/signin - 201\n"
+                        },
+                        {
+                          "text": "Payload:\n"
+                        },
+                        {
+                          "text": "{ email: \u001b[32m'post.test@example.com'\u001b[39m, password: \u001b[32m'password'\u001b[39m }\n"
+                        },
+                        {
+                          "text": "Response Body:\n"
+                        },
+                        {
+                          "text": "{\n  accessToken: \u001b[32m'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwibmFtZSI6IlBvc3QgVGVzdCIsImVtYWlsIjoicG9zdC50ZXN0QGV4YW1wbGUuY29tIiwiaWF0IjoxNzU5NzA0Mzg3LCJleHAiOjE3NTk3MDc5ODd9.J6DVsHJ73pf9uwrIpTWnZUgBEuv3_hxisLQJavN8QhI'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "----------------------------------\n\n"
+                        },
+                        {
+                          "text": "POST http://localhost:3000/posts - 201\n"
+                        },
+                        {
+                          "text": "Payload:\n"
+                        },
+                        {
+                          "text": "{\n  payload: {\n    title: \u001b[32m'Private Inactive Read'\u001b[39m,\n    content: \u001b[32m'Private Inactive Read Content'\u001b[39m,\n    authorId: \u001b[33m1\u001b[39m,\n    type: \u001b[32m'PRIVATE'\u001b[39m,\n    status: \u001b[32m'INACTIVE'\u001b[39m\n  },\n  token: \u001b[32m'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwibmFtZSI6IlBvc3QgVGVzdCIsImVtYWlsIjoicG9zdC50ZXN0QGV4YW1wbGUuY29tIiwiaWF0IjoxNzU5NzA0Mzg3LCJleHAiOjE3NTk3MDc5ODd9.J6DVsHJ73pf9uwrIpTWnZUgBEuv3_hxisLQJavN8QhI'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "Response Body:\n"
+                        },
+                        {
+                          "text": "{\n  id: \u001b[33m5\u001b[39m,\n  title: \u001b[32m'Private Inactive Read'\u001b[39m,\n  content: \u001b[32m'Private Inactive Read Content'\u001b[39m,\n  authorId: \u001b[33m1\u001b[39m,\n  type: \u001b[32m'PRIVATE'\u001b[39m,\n  status: \u001b[32m'INACTIVE'\u001b[39m,\n  createdAt: \u001b[32m'2025-10-05T22:46:27.331Z'\u001b[39m,\n  updatedAt: \u001b[32m'2025-10-05T22:46:27.331Z'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "----------------------------------\n\n"
+                        },
+                        {
+                          "text": "GET http://localhost:3000/posts/5 - 401\n"
+                        },
+                        {
+                          "text": "Payload:\n"
+                        },
+                        {
+                          "text": "{ id: \u001b[33m5\u001b[39m, token: \u001b[90mundefined\u001b[39m }\n"
+                        },
+                        {
+                          "text": "----------------------------------\n\n"
+                        },
+                        {
+                          "text": "GET http://localhost:3000/posts/5 - 200\n"
+                        },
+                        {
+                          "text": "Payload:\n"
+                        },
+                        {
+                          "text": "{\n  id: \u001b[33m5\u001b[39m,\n  token: \u001b[32m'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwibmFtZSI6IlBvc3QgVGVzdCIsImVtYWlsIjoicG9zdC50ZXN0QGV4YW1wbGUuY29tIiwiaWF0IjoxNzU5NzA0Mzg3LCJleHAiOjE3NTk3MDc5ODd9.J6DVsHJ73pf9uwrIpTWnZUgBEuv3_hxisLQJavN8QhI'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "Response Body:\n"
+                        },
+                        {
+                          "text": "{\n  id: \u001b[33m5\u001b[39m,\n  title: \u001b[32m'Private Inactive Read'\u001b[39m,\n  content: \u001b[32m'Private Inactive Read Content'\u001b[39m,\n  authorId: \u001b[33m1\u001b[39m,\n  type: \u001b[32m'PRIVATE'\u001b[39m,\n  status: \u001b[32m'INACTIVE'\u001b[39m,\n  createdAt: \u001b[32m'2025-10-05T22:46:27.331Z'\u001b[39m,\n  updatedAt: \u001b[32m'2025-10-05T22:46:27.331Z'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "----------------------------------\n\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "Error Details: {\"message\":\"User already exists\",\"error\":\"Unauthorized\",\"statusCode\":401}\n"
+                        },
+                        {
+                          "text": "Error Details: {\"message\":\"Authentication required to access private or inactive posts\",\"error\":\"Unauthorized\",\"statusCode\":401}\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2025-10-05T22:46:27.220Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\kelvi\\Downloads\\pos-tech-challenge-2\\test-results\\modules-posts-post-List-an-a49aa-private-inactive-post-by-id-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7074e29538d730118576-82607f5c5c77b1027b1e",
+              "file": "modules/posts/post.spec.js",
+              "line": 274,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Search posts",
+          "file": "modules/posts/post.spec.js",
+          "line": 295,
+          "column": 6,
+          "specs": [
+            {
+              "title": "anonymous sees only public active",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 7,
+                      "status": "passed",
+                      "duration": 195,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "POST http://localhost:3000/auth/signup - 401\n"
+                        },
+                        {
+                          "text": "Payload:\n"
+                        },
+                        {
+                          "text": "{\n  name: \u001b[32m'Post Test'\u001b[39m,\n  email: \u001b[32m'post.test@example.com'\u001b[39m,\n  password: \u001b[32m'password'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "----------------------------------\n\n"
+                        },
+                        {
+                          "text": "POST http://localhost:3000/auth/signin - 201\n"
+                        },
+                        {
+                          "text": "Payload:\n"
+                        },
+                        {
+                          "text": "{ email: \u001b[32m'post.test@example.com'\u001b[39m, password: \u001b[32m'password'\u001b[39m }\n"
+                        },
+                        {
+                          "text": "Response Body:\n"
+                        },
+                        {
+                          "text": "{\n  accessToken: \u001b[32m'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwibmFtZSI6IlBvc3QgVGVzdCIsImVtYWlsIjoicG9zdC50ZXN0QGV4YW1wbGUuY29tIiwiaWF0IjoxNzU5NzA0Mzg3LCJleHAiOjE3NTk3MDc5ODd9.J6DVsHJ73pf9uwrIpTWnZUgBEuv3_hxisLQJavN8QhI'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "----------------------------------\n\n"
+                        },
+                        {
+                          "text": "POST http://localhost:3000/posts - 201\n"
+                        },
+                        {
+                          "text": "Payload:\n"
+                        },
+                        {
+                          "text": "{\n  payload: {\n    title: \u001b[32m'Search Public Active'\u001b[39m,\n    content: \u001b[32m'Search Public Active Content'\u001b[39m,\n    authorId: \u001b[33m1\u001b[39m,\n    type: \u001b[32m'PUBLIC'\u001b[39m,\n    status: \u001b[32m'ACTIVE'\u001b[39m\n  },\n  token: \u001b[32m'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwibmFtZSI6IlBvc3QgVGVzdCIsImVtYWlsIjoicG9zdC50ZXN0QGV4YW1wbGUuY29tIiwiaWF0IjoxNzU5NzA0Mzg3LCJleHAiOjE3NTk3MDc5ODd9.J6DVsHJ73pf9uwrIpTWnZUgBEuv3_hxisLQJavN8QhI'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "Response Body:\n"
+                        },
+                        {
+                          "text": "{\n  id: \u001b[33m7\u001b[39m,\n  title: \u001b[32m'Search Public Active'\u001b[39m,\n  content: \u001b[32m'Search Public Active Content'\u001b[39m,\n  authorId: \u001b[33m1\u001b[39m,\n  type: \u001b[32m'PUBLIC'\u001b[39m,\n  status: \u001b[32m'ACTIVE'\u001b[39m,\n  createdAt: \u001b[32m'2025-10-05T22:46:27.347Z'\u001b[39m,\n  updatedAt: \u001b[32m'2025-10-05T22:46:27.347Z'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "----------------------------------\n\n"
+                        },
+                        {
+                          "text": "POST http://localhost:3000/posts - 201\n"
+                        },
+                        {
+                          "text": "Payload:\n"
+                        },
+                        {
+                          "text": "{\n  payload: {\n    title: \u001b[32m'Search Private Inactive'\u001b[39m,\n    content: \u001b[32m'Search Private Inactive Content'\u001b[39m,\n    authorId: \u001b[33m1\u001b[39m,\n    type: \u001b[32m'PRIVATE'\u001b[39m,\n    status: \u001b[32m'INACTIVE'\u001b[39m\n  },\n  token: \u001b[32m'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwibmFtZSI6IlBvc3QgVGVzdCIsImVtYWlsIjoicG9zdC50ZXN0QGV4YW1wbGUuY29tIiwiaWF0IjoxNzU5NzA0Mzg3LCJleHAiOjE3NTk3MDc5ODd9.J6DVsHJ73pf9uwrIpTWnZUgBEuv3_hxisLQJavN8QhI'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "Response Body:\n"
+                        },
+                        {
+                          "text": "{\n  id: \u001b[33m8\u001b[39m,\n  title: \u001b[32m'Search Private Inactive'\u001b[39m,\n  content: \u001b[32m'Search Private Inactive Content'\u001b[39m,\n  authorId: \u001b[33m1\u001b[39m,\n  type: \u001b[32m'PRIVATE'\u001b[39m,\n  status: \u001b[32m'INACTIVE'\u001b[39m,\n  createdAt: \u001b[32m'2025-10-05T22:46:27.379Z'\u001b[39m,\n  updatedAt: \u001b[32m'2025-10-05T22:46:27.379Z'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "----------------------------------\n\n"
+                        },
+                        {
+                          "text": "GET http://localhost:3000/posts/search?title=Search - 200\n"
+                        },
+                        {
+                          "text": "Payload:\n"
+                        },
+                        {
+                          "text": "{ params: { title: \u001b[32m'Search'\u001b[39m }, token: \u001b[90mundefined\u001b[39m }\n"
+                        },
+                        {
+                          "text": "Response Body:\n"
+                        },
+                        {
+                          "text": "[\n  {\n    id: \u001b[33m7\u001b[39m,\n    title: \u001b[32m'Search Public Active'\u001b[39m,\n    content: \u001b[32m'Search Public Active Content'\u001b[39m,\n    authorId: \u001b[33m1\u001b[39m,\n    type: \u001b[32m'PUBLIC'\u001b[39m,\n    status: \u001b[32m'ACTIVE'\u001b[39m,\n    createdAt: \u001b[32m'2025-10-05T22:46:27.347Z'\u001b[39m,\n    updatedAt: \u001b[32m'2025-10-05T22:46:27.347Z'\u001b[39m\n  }\n]\n"
+                        },
+                        {
+                          "text": "----------------------------------\n\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "Error Details: {\"message\":\"User already exists\",\"error\":\"Unauthorized\",\"statusCode\":401}\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2025-10-05T22:46:27.240Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\kelvi\\Downloads\\pos-tech-challenge-2\\test-results\\modules-posts-post-Search--a574f-ous-sees-only-public-active-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7074e29538d730118576-5825fcf9f6f023665572",
+              "file": "modules/posts/post.spec.js",
+              "line": 296,
+              "column": 7
+            },
+            {
+              "title": "authenticated sees all posts including private/inactive from any author",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 348,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "POST http://localhost:3000/auth/signup - 401\n"
+                        },
+                        {
+                          "text": "Payload:\n"
+                        },
+                        {
+                          "text": "{\n  name: \u001b[32m'Post Test'\u001b[39m,\n  email: \u001b[32m'post.test@example.com'\u001b[39m,\n  password: \u001b[32m'password'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "----------------------------------\n\n"
+                        },
+                        {
+                          "text": "POST http://localhost:3000/auth/signin - 201\n"
+                        },
+                        {
+                          "text": "Payload:\n"
+                        },
+                        {
+                          "text": "{ email: \u001b[32m'post.test@example.com'\u001b[39m, password: \u001b[32m'password'\u001b[39m }\n"
+                        },
+                        {
+                          "text": "Response Body:\n"
+                        },
+                        {
+                          "text": "{\n  accessToken: \u001b[32m'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwibmFtZSI6IlBvc3QgVGVzdCIsImVtYWlsIjoicG9zdC50ZXN0QGV4YW1wbGUuY29tIiwiaWF0IjoxNzU5NzA0Mzg3LCJleHAiOjE3NTk3MDc5ODd9.J6DVsHJ73pf9uwrIpTWnZUgBEuv3_hxisLQJavN8QhI'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "----------------------------------\n\n"
+                        },
+                        {
+                          "text": "POST http://localhost:3000/auth/signup - 201\n"
+                        },
+                        {
+                          "text": "Payload:\n"
+                        },
+                        {
+                          "text": "{\n  name: \u001b[32m'Second User'\u001b[39m,\n  email: \u001b[32m'second.user@example.com'\u001b[39m,\n  password: \u001b[32m'password'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "Response Body:\n"
+                        },
+                        {
+                          "text": "{ id: \u001b[33m7\u001b[39m, name: \u001b[32m'Second User'\u001b[39m, email: \u001b[32m'second.user@example.com'\u001b[39m }\n"
+                        },
+                        {
+                          "text": "----------------------------------\n\n"
+                        },
+                        {
+                          "text": "POST http://localhost:3000/auth/signin - 201\n"
+                        },
+                        {
+                          "text": "Payload:\n"
+                        },
+                        {
+                          "text": "{ email: \u001b[32m'second.user@example.com'\u001b[39m, password: \u001b[32m'password'\u001b[39m }\n"
+                        },
+                        {
+                          "text": "Response Body:\n"
+                        },
+                        {
+                          "text": "{\n  accessToken: \u001b[32m'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NywibmFtZSI6IlNlY29uZCBVc2VyIiwiZW1haWwiOiJzZWNvbmQudXNlckBleGFtcGxlLmNvbSIsImlhdCI6MTc1OTcwNDM4NywiZXhwIjoxNzU5NzA3OTg3fQ.awU7hS5pGfuiqJ6JZ12cdVygNndqeczx0BOq5WMNaA8'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "----------------------------------\n\n"
+                        },
+                        {
+                          "text": "POST http://localhost:3000/posts - 201\n"
+                        },
+                        {
+                          "text": "Payload:\n"
+                        },
+                        {
+                          "text": "{\n  payload: {\n    title: \u001b[32m'Search Public Active'\u001b[39m,\n    content: \u001b[32m'Search Public Active Content'\u001b[39m,\n    authorId: \u001b[33m1\u001b[39m,\n    type: \u001b[32m'PUBLIC'\u001b[39m,\n    status: \u001b[32m'ACTIVE'\u001b[39m\n  },\n  token: \u001b[32m'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwibmFtZSI6IlBvc3QgVGVzdCIsImVtYWlsIjoicG9zdC50ZXN0QGV4YW1wbGUuY29tIiwiaWF0IjoxNzU5NzA0Mzg3LCJleHAiOjE3NTk3MDc5ODd9.J6DVsHJ73pf9uwrIpTWnZUgBEuv3_hxisLQJavN8QhI'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "Response Body:\n"
+                        },
+                        {
+                          "text": "{\n  id: \u001b[33m11\u001b[39m,\n  title: \u001b[32m'Search Public Active'\u001b[39m,\n  content: \u001b[32m'Search Public Active Content'\u001b[39m,\n  authorId: \u001b[33m1\u001b[39m,\n  type: \u001b[32m'PUBLIC'\u001b[39m,\n  status: \u001b[32m'ACTIVE'\u001b[39m,\n  createdAt: \u001b[32m'2025-10-05T22:46:27.531Z'\u001b[39m,\n  updatedAt: \u001b[32m'2025-10-05T22:46:27.531Z'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "----------------------------------\n\n"
+                        },
+                        {
+                          "text": "POST http://localhost:3000/posts - 201\n"
+                        },
+                        {
+                          "text": "Payload:\n"
+                        },
+                        {
+                          "text": "{\n  payload: {\n    title: \u001b[32m'Search Private Inactive'\u001b[39m,\n    content: \u001b[32m'Search Private Inactive Content'\u001b[39m,\n    authorId: \u001b[33m1\u001b[39m,\n    type: \u001b[32m'PRIVATE'\u001b[39m,\n    status: \u001b[32m'INACTIVE'\u001b[39m\n  },\n  token: \u001b[32m'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwibmFtZSI6IlBvc3QgVGVzdCIsImVtYWlsIjoicG9zdC50ZXN0QGV4YW1wbGUuY29tIiwiaWF0IjoxNzU5NzA0Mzg3LCJleHAiOjE3NTk3MDc5ODd9.J6DVsHJ73pf9uwrIpTWnZUgBEuv3_hxisLQJavN8QhI'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "Response Body:\n"
+                        },
+                        {
+                          "text": "{\n  id: \u001b[33m12\u001b[39m,\n  title: \u001b[32m'Search Private Inactive'\u001b[39m,\n  content: \u001b[32m'Search Private Inactive Content'\u001b[39m,\n  authorId: \u001b[33m1\u001b[39m,\n  type: \u001b[32m'PRIVATE'\u001b[39m,\n  status: \u001b[32m'INACTIVE'\u001b[39m,\n  createdAt: \u001b[32m'2025-10-05T22:46:27.549Z'\u001b[39m,\n  updatedAt: \u001b[32m'2025-10-05T22:46:27.549Z'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "----------------------------------\n\n"
+                        },
+                        {
+                          "text": "POST http://localhost:3000/posts - 201\n"
+                        },
+                        {
+                          "text": "Payload:\n"
+                        },
+                        {
+                          "text": "{\n  payload: {\n    title: \u001b[32m'Search Other Author Private'\u001b[39m,\n    content: \u001b[32m'Search Other Author Private Content'\u001b[39m,\n    authorId: \u001b[33m2\u001b[39m,\n    type: \u001b[32m'PRIVATE'\u001b[39m,\n    status: \u001b[32m'INACTIVE'\u001b[39m\n  },\n  token: \u001b[32m'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NywibmFtZSI6IlNlY29uZCBVc2VyIiwiZW1haWwiOiJzZWNvbmQudXNlckBleGFtcGxlLmNvbSIsImlhdCI6MTc1OTcwNDM4NywiZXhwIjoxNzU5NzA3OTg3fQ.awU7hS5pGfuiqJ6JZ12cdVygNndqeczx0BOq5WMNaA8'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "Response Body:\n"
+                        },
+                        {
+                          "text": "{\n  id: \u001b[33m13\u001b[39m,\n  title: \u001b[32m'Search Other Author Private'\u001b[39m,\n  content: \u001b[32m'Search Other Author Private Content'\u001b[39m,\n  authorId: \u001b[33m2\u001b[39m,\n  type: \u001b[32m'PRIVATE'\u001b[39m,\n  status: \u001b[32m'INACTIVE'\u001b[39m,\n  createdAt: \u001b[32m'2025-10-05T22:46:27.562Z'\u001b[39m,\n  updatedAt: \u001b[32m'2025-10-05T22:46:27.562Z'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "----------------------------------\n\n"
+                        },
+                        {
+                          "text": "GET http://localhost:3000/posts/search?title=Search - 200\n"
+                        },
+                        {
+                          "text": "Payload:\n"
+                        },
+                        {
+                          "text": "{\n  params: { title: \u001b[32m'Search'\u001b[39m },\n  token: \u001b[32m'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwibmFtZSI6IlBvc3QgVGVzdCIsImVtYWlsIjoicG9zdC50ZXN0QGV4YW1wbGUuY29tIiwiaWF0IjoxNzU5NzA0Mzg3LCJleHAiOjE3NTk3MDc5ODd9.J6DVsHJ73pf9uwrIpTWnZUgBEuv3_hxisLQJavN8QhI'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "Response Body:\n"
+                        },
+                        {
+                          "text": "[\n  {\n    id: \u001b[33m7\u001b[39m,\n    title: \u001b[32m'Search Public Active'\u001b[39m,\n    content: \u001b[32m'Search Public Active Content'\u001b[39m,\n    authorId: \u001b[33m1\u001b[39m,\n    type: \u001b[32m'PUBLIC'\u001b[39m,\n    status: \u001b[32m'ACTIVE'\u001b[39m,\n    createdAt: \u001b[32m'2025-10-05T22:46:27.347Z'\u001b[39m,\n    updatedAt: \u001b[32m'2025-10-05T22:46:27.347Z'\u001b[39m\n  },\n  {\n    id: \u001b[33m8\u001b[39m,\n    title: \u001b[32m'Search Private Inactive'\u001b[39m,\n    content: \u001b[32m'Search Private Inactive Content'\u001b[39m,\n    authorId: \u001b[33m1\u001b[39m,\n    type: \u001b[32m'PRIVATE'\u001b[39m,\n    status: \u001b[32m'INACTIVE'\u001b[39m,\n    createdAt: \u001b[32m'2025-10-05T22:46:27.379Z'\u001b[39m,\n    updatedAt: \u001b[32m'2025-10-05T22:46:27.379Z'\u001b[39m\n  },\n  {\n    id: \u001b[33m11\u001b[39m,\n    title: \u001b[32m'Search Public Active'\u001b[39m,\n    content: \u001b[32m'Search Public Active Content'\u001b[39m,\n    authorId: \u001b[33m1\u001b[39m,\n    type: \u001b[32m'PUBLIC'\u001b[39m,\n    status: \u001b[32m'ACTIVE'\u001b[39m,\n    createdAt: \u001b[32m'2025-10-05T22:46:27.531Z'\u001b[39m,\n    updatedAt: \u001b[32m'2025-10-05T22:46:27.531Z'\u001b[39m\n  },\n  {\n    id: \u001b[33m12\u001b[39m,\n    title: \u001b[32m'Search Private Inactive'\u001b[39m,\n    content: \u001b[32m'Search Private Inactive Content'\u001b[39m,\n    authorId: \u001b[33m1\u001b[39m,\n    type: \u001b[32m'PRIVATE'\u001b[39m,\n    status: \u001b[32m'INACTIVE'\u001b[39m,\n    createdAt: \u001b[32m'2025-10-05T22:46:27.549Z'\u001b[39m,\n    updatedAt: \u001b[32m'2025-10-05T22:46:27.549Z'\u001b[39m\n  },\n  {\n    id: \u001b[33m13\u001b[39m,\n    title: \u001b[32m'Search Other Author Private'\u001b[39m,\n    content: \u001b[32m'Search Other Author Private Content'\u001b[39m,\n    authorId: \u001b[33m2\u001b[39m,\n    type: \u001b[32m'PRIVATE'\u001b[39m,\n    status: \u001b[32m'INACTIVE'\u001b[39m,\n    createdAt: \u001b[32m'2025-10-05T22:46:27.562Z'\u001b[39m,\n    updatedAt: \u001b[32m'2025-10-05T22:46:27.562Z'\u001b[39m\n  }\n]\n"
+                        },
+                        {
+                          "text": "----------------------------------\n\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "Error Details: {\"message\":\"User already exists\",\"error\":\"Unauthorized\",\"statusCode\":401}\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2025-10-05T22:46:27.256Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\kelvi\\Downloads\\pos-tech-challenge-2\\test-results\\modules-posts-post-Search--17bec-te-inactive-from-any-author-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7074e29538d730118576-769656558616bf730abf",
+              "file": "modules/posts/post.spec.js",
+              "line": 329,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Update and delete posts",
+          "file": "modules/posts/post.spec.js",
+          "line": 401,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should update post with auth",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 6,
+                      "status": "passed",
+                      "duration": 180,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "POST http://localhost:3000/auth/signup - 401\n"
+                        },
+                        {
+                          "text": "Payload:\n"
+                        },
+                        {
+                          "text": "{\n  name: \u001b[32m'Post Test'\u001b[39m,\n  email: \u001b[32m'post.test@example.com'\u001b[39m,\n  password: \u001b[32m'password'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "----------------------------------\n\n"
+                        },
+                        {
+                          "text": "POST http://localhost:3000/auth/signin - 201\n"
+                        },
+                        {
+                          "text": "Payload:\n"
+                        },
+                        {
+                          "text": "{ email: \u001b[32m'post.test@example.com'\u001b[39m, password: \u001b[32m'password'\u001b[39m }\n"
+                        },
+                        {
+                          "text": "Response Body:\n"
+                        },
+                        {
+                          "text": "{\n  accessToken: \u001b[32m'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwibmFtZSI6IlBvc3QgVGVzdCIsImVtYWlsIjoicG9zdC50ZXN0QGV4YW1wbGUuY29tIiwiaWF0IjoxNzU5NzA0Mzg3LCJleHAiOjE3NTk3MDc5ODd9.J6DVsHJ73pf9uwrIpTWnZUgBEuv3_hxisLQJavN8QhI'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "----------------------------------\n\n"
+                        },
+                        {
+                          "text": "POST http://localhost:3000/posts - 201\n"
+                        },
+                        {
+                          "text": "Payload:\n"
+                        },
+                        {
+                          "text": "{\n  payload: {\n    title: \u001b[32m'To Update'\u001b[39m,\n    content: \u001b[32m'Old Content'\u001b[39m,\n    authorId: \u001b[33m1\u001b[39m,\n    type: \u001b[32m'PUBLIC'\u001b[39m,\n    status: \u001b[32m'ACTIVE'\u001b[39m\n  },\n  token: \u001b[32m'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwibmFtZSI6IlBvc3QgVGVzdCIsImVtYWlsIjoicG9zdC50ZXN0QGV4YW1wbGUuY29tIiwiaWF0IjoxNzU5NzA0Mzg3LCJleHAiOjE3NTk3MDc5ODd9.J6DVsHJ73pf9uwrIpTWnZUgBEuv3_hxisLQJavN8QhI'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "Response Body:\n"
+                        },
+                        {
+                          "text": "{\n  id: \u001b[33m9\u001b[39m,\n  title: \u001b[32m'To Update'\u001b[39m,\n  content: \u001b[32m'Old Content'\u001b[39m,\n  authorId: \u001b[33m1\u001b[39m,\n  type: \u001b[32m'PUBLIC'\u001b[39m,\n  status: \u001b[32m'ACTIVE'\u001b[39m,\n  createdAt: \u001b[32m'2025-10-05T22:46:27.390Z'\u001b[39m,\n  updatedAt: \u001b[32m'2025-10-05T22:46:27.390Z'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "----------------------------------\n\n"
+                        },
+                        {
+                          "text": "PUT http://localhost:3000/posts/9 - 200\n"
+                        },
+                        {
+                          "text": "Payload:\n"
+                        },
+                        {
+                          "text": "{\n  id: \u001b[33m9\u001b[39m,\n  payload: {\n    title: \u001b[32m'Updated'\u001b[39m,\n    content: \u001b[32m'New Content'\u001b[39m,\n    type: \u001b[32m'PUBLIC'\u001b[39m,\n    status: \u001b[32m'ACTIVE'\u001b[39m\n  },\n  token: \u001b[32m'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwibmFtZSI6IlBvc3QgVGVzdCIsImVtYWlsIjoicG9zdC50ZXN0QGV4YW1wbGUuY29tIiwiaWF0IjoxNzU5NzA0Mzg3LCJleHAiOjE3NTk3MDc5ODd9.J6DVsHJ73pf9uwrIpTWnZUgBEuv3_hxisLQJavN8QhI'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "Response Body:\n"
+                        },
+                        {
+                          "text": "{\n  id: \u001b[33m9\u001b[39m,\n  title: \u001b[32m'Updated'\u001b[39m,\n  content: \u001b[32m'New Content'\u001b[39m,\n  authorId: \u001b[33m1\u001b[39m,\n  type: \u001b[32m'PUBLIC'\u001b[39m,\n  status: \u001b[32m'ACTIVE'\u001b[39m,\n  createdAt: \u001b[32m'2025-10-05T22:46:27.390Z'\u001b[39m,\n  updatedAt: \u001b[32m'2025-10-05T22:46:27.414Z'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "----------------------------------\n\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "Error Details: {\"message\":\"User already exists\",\"error\":\"Unauthorized\",\"statusCode\":401}\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2025-10-05T22:46:27.266Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\kelvi\\Downloads\\pos-tech-challenge-2\\test-results\\modules-posts-post-Update--dc295-hould-update-post-with-auth-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7074e29538d730118576-967d07f7d2671d1204b2",
+              "file": "modules/posts/post.spec.js",
+              "line": 402,
+              "column": 7
+            },
+            {
+              "title": "delete only works when inactive",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 226,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "POST http://localhost:3000/auth/signup - 401\n"
+                        },
+                        {
+                          "text": "Payload:\n"
+                        },
+                        {
+                          "text": "{\n  name: \u001b[32m'Post Test'\u001b[39m,\n  email: \u001b[32m'post.test@example.com'\u001b[39m,\n  password: \u001b[32m'password'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "----------------------------------\n\n"
+                        },
+                        {
+                          "text": "POST http://localhost:3000/auth/signin - 201\n"
+                        },
+                        {
+                          "text": "Payload:\n"
+                        },
+                        {
+                          "text": "{ email: \u001b[32m'post.test@example.com'\u001b[39m, password: \u001b[32m'password'\u001b[39m }\n"
+                        },
+                        {
+                          "text": "Response Body:\n"
+                        },
+                        {
+                          "text": "{\n  accessToken: \u001b[32m'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwibmFtZSI6IlBvc3QgVGVzdCIsImVtYWlsIjoicG9zdC50ZXN0QGV4YW1wbGUuY29tIiwiaWF0IjoxNzU5NzA0Mzg3LCJleHAiOjE3NTk3MDc5ODd9.J6DVsHJ73pf9uwrIpTWnZUgBEuv3_hxisLQJavN8QhI'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "----------------------------------\n\n"
+                        },
+                        {
+                          "text": "POST http://localhost:3000/posts - 201\n"
+                        },
+                        {
+                          "text": "Payload:\n"
+                        },
+                        {
+                          "text": "{\n  payload: {\n    title: \u001b[32m'To Delete'\u001b[39m,\n    content: \u001b[32m'To Delete Content'\u001b[39m,\n    authorId: \u001b[33m1\u001b[39m,\n    type: \u001b[32m'PUBLIC'\u001b[39m,\n    status: \u001b[32m'ACTIVE'\u001b[39m\n  },\n  token: \u001b[32m'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwibmFtZSI6IlBvc3QgVGVzdCIsImVtYWlsIjoicG9zdC50ZXN0QGV4YW1wbGUuY29tIiwiaWF0IjoxNzU5NzA0Mzg3LCJleHAiOjE3NTk3MDc5ODd9.J6DVsHJ73pf9uwrIpTWnZUgBEuv3_hxisLQJavN8QhI'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "Response Body:\n"
+                        },
+                        {
+                          "text": "{\n  id: \u001b[33m10\u001b[39m,\n  title: \u001b[32m'To Delete'\u001b[39m,\n  content: \u001b[32m'To Delete Content'\u001b[39m,\n  authorId: \u001b[33m1\u001b[39m,\n  type: \u001b[32m'PUBLIC'\u001b[39m,\n  status: \u001b[32m'ACTIVE'\u001b[39m,\n  createdAt: \u001b[32m'2025-10-05T22:46:27.394Z'\u001b[39m,\n  updatedAt: \u001b[32m'2025-10-05T22:46:27.394Z'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "----------------------------------\n\n"
+                        },
+                        {
+                          "text": "DELETE http://localhost:3000/posts/10 - 400\n"
+                        },
+                        {
+                          "text": "Payload:\n"
+                        },
+                        {
+                          "text": "{\n  id: \u001b[33m10\u001b[39m,\n  token: \u001b[32m'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwibmFtZSI6IlBvc3QgVGVzdCIsImVtYWlsIjoicG9zdC50ZXN0QGV4YW1wbGUuY29tIiwiaWF0IjoxNzU5NzA0Mzg3LCJleHAiOjE3NTk3MDc5ODd9.J6DVsHJ73pf9uwrIpTWnZUgBEuv3_hxisLQJavN8QhI'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "----------------------------------\n\n"
+                        },
+                        {
+                          "text": "PUT http://localhost:3000/posts/10 - 200\n"
+                        },
+                        {
+                          "text": "Payload:\n"
+                        },
+                        {
+                          "text": "{\n  id: \u001b[33m10\u001b[39m,\n  payload: {\n    title: \u001b[90mundefined\u001b[39m,\n    content: \u001b[90mundefined\u001b[39m,\n    type: \u001b[90mundefined\u001b[39m,\n    status: \u001b[32m'INACTIVE'\u001b[39m\n  },\n  token: \u001b[32m'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwibmFtZSI6IlBvc3QgVGVzdCIsImVtYWlsIjoicG9zdC50ZXN0QGV4YW1wbGUuY29tIiwiaWF0IjoxNzU5NzA0Mzg3LCJleHAiOjE3NTk3MDc5ODd9.J6DVsHJ73pf9uwrIpTWnZUgBEuv3_hxisLQJavN8QhI'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "Response Body:\n"
+                        },
+                        {
+                          "text": "{\n  id: \u001b[33m10\u001b[39m,\n  title: \u001b[32m'To Delete'\u001b[39m,\n  content: \u001b[32m'To Delete Content'\u001b[39m,\n  authorId: \u001b[33m1\u001b[39m,\n  type: \u001b[32m'PUBLIC'\u001b[39m,\n  status: \u001b[32m'INACTIVE'\u001b[39m,\n  createdAt: \u001b[32m'2025-10-05T22:46:27.394Z'\u001b[39m,\n  updatedAt: \u001b[32m'2025-10-05T22:46:27.443Z'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "----------------------------------\n\n"
+                        },
+                        {
+                          "text": "DELETE http://localhost:3000/posts/10 - 200\n"
+                        },
+                        {
+                          "text": "Payload:\n"
+                        },
+                        {
+                          "text": "{\n  id: \u001b[33m10\u001b[39m,\n  token: \u001b[32m'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwibmFtZSI6IlBvc3QgVGVzdCIsImVtYWlsIjoicG9zdC50ZXN0QGV4YW1wbGUuY29tIiwiaWF0IjoxNzU5NzA0Mzg3LCJleHAiOjE3NTk3MDc5ODd9.J6DVsHJ73pf9uwrIpTWnZUgBEuv3_hxisLQJavN8QhI'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "Response Body:\n"
+                        },
+                        {
+                          "text": "{ message: \u001b[32m'Post deleted successfully'\u001b[39m }\n"
+                        },
+                        {
+                          "text": "----------------------------------\n\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "Error Details: {\"message\":\"User already exists\",\"error\":\"Unauthorized\",\"statusCode\":401}\n"
+                        },
+                        {
+                          "text": "Error Details: {\"message\":\"Only inactive posts can be deleted. Please deactivate the post first.\",\"error\":\"Bad Request\",\"statusCode\":400}\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2025-10-05T22:46:27.272Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\kelvi\\Downloads\\pos-tech-challenge-2\\test-results\\modules-posts-post-Update--f0252-te-only-works-when-inactive-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7074e29538d730118576-7b98b58dfb96091ce636",
+              "file": "modules/posts/post.spec.js",
+              "line": 431,
+              "column": 7
+            }
+          ]
+        }
+      ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-10-05T19:40:08.328Z",
-    "duration": 21470.691,
-    "expected": 6,
+    "startTime": "2025-10-05T22:46:09.647Z",
+    "duration": 19955.798000000003,
+    "expected": 20,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0
