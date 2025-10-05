@@ -1,6 +1,10 @@
-import { Injectable, NotFoundException } from '@nestjs/common';
+import {
+  Injectable,
+  NotFoundException,
+  BadRequestException,
+} from '@nestjs/common';
 import { PrismaService } from 'src/prisma/prisma.service';
-import { CreatePostDto, UpdatePostDto } from './dto/posts';
+import { CreatePostDto, UpdatePostDto, PostStatus } from './dto/posts';
 
 @Injectable()
 export class PostsService {
@@ -66,6 +70,13 @@ export class PostsService {
 
     if (!existingPost) {
       throw new NotFoundException('Post not found');
+    }
+
+    // Verifica se o post está inativo antes de permitir a exclusão
+    if ((existingPost as any).status !== PostStatus.INACTIVE) {
+      throw new BadRequestException(
+        'Only inactive posts can be deleted. Please deactivate the post first.',
+      );
     }
 
     await this.prismaService.post.delete({ where: { id } });

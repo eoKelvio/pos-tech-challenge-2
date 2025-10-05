@@ -21,12 +21,24 @@ model User {
   posts Post[]
 }
 
+enum PostType {
+  PUBLIC
+  PRIVATE
+}
+
+enum PostStatus {
+  ACTIVE
+  INACTIVE
+}
+
 model Post {
   id Int @id @default(autoincrement())
   title String
   content String
   authorId Int
   author User @relation(fields: [authorId], references: [id])
+  type PostType @default(PUBLIC)
+  status PostStatus @default(ACTIVE)
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }

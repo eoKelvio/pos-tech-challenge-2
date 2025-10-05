@@ -4,8 +4,19 @@ import {
   IsOptional,
   IsInt,
   MinLength,
+  IsIn,
 } from 'class-validator';
 import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
+
+export enum PostType {
+  PUBLIC = 'PUBLIC',
+  PRIVATE = 'PRIVATE',
+}
+
+export enum PostStatus {
+  ACTIVE = 'ACTIVE',
+  INACTIVE = 'INACTIVE',
+}
 
 export class CreatePostDto {
   @ApiProperty({
@@ -35,6 +46,28 @@ export class CreatePostDto {
   @IsInt()
   @IsNotEmpty()
   authorId: number;
+
+  @ApiProperty({
+    description: 'Post type',
+    example: PostType.PUBLIC,
+    enum: PostType,
+  })
+  @IsNotEmpty()
+  @IsIn(Object.values(PostType), {
+    message: `Type must be one of: ${Object.values(PostType).join(', ')}`,
+  })
+  type: PostType;
+
+  @ApiProperty({
+    description: 'Post status',
+    example: PostStatus.ACTIVE,
+    enum: PostStatus,
+  })
+  @IsNotEmpty()
+  @IsIn(Object.values(PostStatus), {
+    message: `Status must be one of: ${Object.values(PostStatus).join(', ')}`,
+  })
+  status: PostStatus;
 }
 
 export class UpdatePostDto {
@@ -57,6 +90,17 @@ export class UpdatePostDto {
   @IsOptional()
   @MinLength(3)
   content?: string;
+
+  @ApiPropertyOptional({
+    description: 'Post status',
+    example: PostStatus.ACTIVE,
+    enum: PostStatus,
+  })
+  @IsOptional()
+  @IsIn(Object.values(PostStatus), {
+    message: `Status must be one of: ${Object.values(PostStatus).join(', ')}`,
+  })
+  status?: PostStatus;
 }
 
 export class SearchPostsDto {

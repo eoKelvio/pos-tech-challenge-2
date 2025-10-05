@@ -86,9 +86,16 @@ export class PostsController {
   @UseGuards(AuthGuard)
   @Delete(':id')
   @ApiBearerAuth('JWT-auth')
-  @ApiOperation({ summary: 'Delete post' })
+  @ApiOperation({
+    summary: 'Delete post',
+    description: 'Deletes a post. Only inactive posts can be deleted.',
+  })
   @ApiParam({ name: 'id', description: 'Post ID' })
   @ApiResponse({ status: 200, description: 'Post deleted successfully' })
+  @ApiResponse({
+    status: 400,
+    description: 'Bad request - Only inactive posts can be deleted',
+  })
   @ApiResponse({ status: 401, description: 'Unauthorized' })
   @ApiResponse({ status: 404, description: 'Post not found' })
   async deletePost(@Param('id', ParseIntPipe) id: number) {
