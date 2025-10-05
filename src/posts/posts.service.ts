@@ -1,12 +1,30 @@
-import { Injectable, NotFoundException } from '@nestjs/common';
+import {
+  Injectable,
+  NotFoundException,
+  BadRequestException,
+} from '@nestjs/common';
 import { PrismaService } from 'src/prisma/prisma.service';
-import { CreatePostDto, UpdatePostDto } from './dto/posts';
+import {
+  CreatePostDto,
+  UpdatePostDto,
+  PostStatus,
+  PostType,
+} from './dto/posts';
 
 @Injectable()
 export class PostsService {
   constructor(private readonly prismaService: PrismaService) {}
 
-  async getPosts() {
+  async getActivePosts() {
+    return this.prismaService.post.findMany({
+      where: {
+        status: PostStatus.ACTIVE,
+        type: PostType.PUBLIC,
+      } as any,
+    });
+  }
+
+  async getAllPosts() {
     return this.prismaService.post.findMany();
   }
 
@@ -68,6 +86,13 @@ export class PostsService {
       throw new NotFoundException('Post not found');
     }
 
+    // Verifica se o post está inativo antes de permitir a exclusão
+    if ((existingPost as any).status !== PostStatus.INACTIVE) {
+      throw new BadRequestException(
+        'Only inactive posts can be deleted. Please deactivate the post first.',
+      );
+    }
+
     await this.prismaService.post.delete({ where: { id } });
 
     return { message: 'Post deleted successfully' };
@@ -80,7 +105,9 @@ export class PostsService {
           contains: title,
           mode: 'insensitive',
         },
-      },
+        status: PostStatus.ACTIVE,
+        type: PostType.PUBLIC,
+      } as any,
     });
   }
 }

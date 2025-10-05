@@ -1,3 +1,9 @@
+-- CreateEnum
+CREATE TYPE "public"."PostType" AS ENUM ('PUBLIC', 'PRIVATE');
+
+-- CreateEnum
+CREATE TYPE "public"."PostStatus" AS ENUM ('ACTIVE', 'INACTIVE');
+
 -- CreateTable
 CREATE TABLE "public"."User" (
     "id" SERIAL NOT NULL,
@@ -14,6 +20,8 @@ CREATE TABLE "public"."Post" (
     "title" TEXT NOT NULL,
     "content" TEXT NOT NULL,
     "authorId" INTEGER NOT NULL,
+    "type" "public"."PostType" NOT NULL DEFAULT 'PUBLIC',
+    "status" "public"."PostStatus" NOT NULL DEFAULT 'ACTIVE',
     "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "updatedAt" TIMESTAMP(3) NOT NULL,
 
