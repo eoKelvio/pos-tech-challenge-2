@@ -4,13 +4,27 @@ import {
   BadRequestException,
 } from '@nestjs/common';
 import { PrismaService } from 'src/prisma/prisma.service';
-import { CreatePostDto, UpdatePostDto, PostStatus } from './dto/posts';
+import {
+  CreatePostDto,
+  UpdatePostDto,
+  PostStatus,
+  PostType,
+} from './dto/posts';
 
 @Injectable()
 export class PostsService {
   constructor(private readonly prismaService: PrismaService) {}
 
-  async getPosts() {
+  async getActivePosts() {
+    return this.prismaService.post.findMany({
+      where: {
+        status: PostStatus.ACTIVE,
+        type: PostType.PUBLIC,
+      } as any,
+    });
+  }
+
+  async getAllPosts() {
     return this.prismaService.post.findMany();
   }
 
@@ -91,7 +105,9 @@ export class PostsService {
           contains: title,
           mode: 'insensitive',
         },
-      },
+        status: PostStatus.ACTIVE,
+        type: PostType.PUBLIC,
+      } as any,
     });
   }
 }
