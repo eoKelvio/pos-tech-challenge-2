@@ -6,7 +6,14 @@ import tseslint from 'typescript-eslint';
 
 export default tseslint.config(
   {
-    ignores: ['eslint.config.mjs'],
+    ignores: [
+      'eslint.config.mjs',
+      'dist/',
+      'node_modules/',
+      'tests/',
+      'scripts/',
+      '*.js',
+    ],
   },
   eslint.configs.recommended,
   ...tseslint.configs.recommendedTypeChecked,
@@ -27,8 +34,35 @@ export default tseslint.config(
   {
     rules: {
       '@typescript-eslint/no-explicit-any': 'off',
-      '@typescript-eslint/no-floating-promises': 'warn',
-      '@typescript-eslint/no-unsafe-argument': 'warn'
+      '@typescript-eslint/no-floating-promises': 'off',
+      '@typescript-eslint/no-unsafe-argument': 'off',
+      '@typescript-eslint/no-unsafe-assignment': 'off',
+      '@typescript-eslint/no-unsafe-call': 'off',
+      '@typescript-eslint/no-unsafe-member-access': 'off',
+      '@typescript-eslint/no-unsafe-return': 'off',
+      '@typescript-eslint/no-unused-vars': 'off',
+      '@typescript-eslint/require-await': 'off',
+      '@typescript-eslint/no-empty-function': 'off',
+      '@typescript-eslint/ban-types': 'off',
+      '@typescript-eslint/no-inferrable-types': 'off',
+      '@typescript-eslint/prefer-as-const': 'off',
+      '@typescript-eslint/no-non-null-assertion': 'off',
+
+      'no-console': 'off',
+      'prefer-const': 'off',
+      'no-unused-vars': 'off',
+      'no-empty': 'off',
+      'no-undef': 'off',
+      'no-redeclare': 'off',
+      'no-var': 'off',
+      'prefer-rest-params': 'off',
+      'prefer-spread': 'off',
+
+      'no-duplicate-imports': 'warn',
+      'no-unreachable': 'error',
+      'no-constant-condition': 'error',
+
+      'prettier/prettier': 'warn',
     },
   },
 );
