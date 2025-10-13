@@ -1,5 +1,12 @@
 # 📚 Pos Tech Challenge 2
 
+![Node.js](https://img.shields.io/badge/Node.js-green?logo=node.js) 
+![TypeScript](https://img.shields.io/badge/TypeScript-gray?logo=typescript) 
+![Prisma](https://img.shields.io/badge/Prisma-0C344B?style=flat&logo=prisma&logoColor=white) 
+![Swagger](https://img.shields.io/badge/Swagger-green?logo=swagger) 
+![PostgresSQL](https://img.shields.io/badge/PostgreSQL-316192?logo=postgresql&logoColor=white) 
+![Playwright](https://img.shields.io/github/package-json/dependency-version/cawa-93/vite-electron-builder/dev/playwright)
+
 API RESTful desenvolvida com NestJS para gerenciamento de posts e autenticação de usuários, com arquitetura modular e containerizada.
 
 ## 🚀 Tecnologias Utilizadas
